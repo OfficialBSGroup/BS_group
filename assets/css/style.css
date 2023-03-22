@@ -421,17 +421,37 @@ h6 {
   /* opacity: 0.6; */
 }
 
-.slider{
-  background: url('assets/img/20230213_151336.jpg');
-  background-size: cover;
- 
+.carousel-control-next,
+.carousel-control-prev {
+  width: 30px;
+  height: 30px;
+  top: 48%
 }
+
+.carousel-control-next img,
+.carousel-control-prev img {
+  width: 30px
+}
+
+.carousel-control-next {
+  right: 10px
+}
+
+.carousel-control-prev {
+  left: 10px
+}
+
+.slider{
+  background-image: url('/assets/img/20230111_142225.jpg');
+  background-size: cover;
+
+}
+
+
 .img-fluid{
   position: relative;
   top: 30px;
 }
-
-
 
 #hero:before {
   content: "";
