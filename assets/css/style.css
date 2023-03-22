@@ -442,9 +442,9 @@ h6 {
 }
 
 .slider{
-  background-image: url('/assets/img/20230111_142225.jpg');
+  background-image: url('/assets/img/20230111_142225.png');
   background-size: cover;
-
+  background-attachment: fixed;
 }
 
 
