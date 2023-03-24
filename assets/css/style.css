@@ -128,6 +128,7 @@ h6 {
 }
 
 
+
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
   height: 60px;
@@ -432,6 +433,87 @@ h6 {
 .carousel-control-prev img {
   width: 30px
 }
+#slide1{
+  background-image: url('../../assets/img/20230111_142225.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#slide1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+  
+  /* adjust opacity as desired */
+}
+#slide2{
+  background-image: url('../../assets/img/ARV_8745-1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+ /* #slide2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+
+}  */
+#slide3{
+ 
+  background-image: url('../../assets/img/ARV_9662.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* #slide3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+#slide4{
+  background-image: url('../../assets/img/20230213_151336.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* #slide4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+#slide5{
+  background-image: url('../../assets/img/20230213_151336.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* #slide5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+
 
 .carousel-control-next {
   right: 10px
@@ -440,13 +522,6 @@ h6 {
 .carousel-control-prev {
   left: 10px
 }
-
-.slider{
-  background-image: url('../../assets/img/20230111_142225.png');
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 
 .img-fluid{
   position: relative;

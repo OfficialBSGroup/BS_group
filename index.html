@@ -265,13 +265,15 @@
     </svg>
   </div>
 </div>
-<a class="carousel-control-prev" href="#homeslider" role="button" data-slide="prev">
-  <img loading="lazy" src="https://www.srvmedia.com/assets/images/leftarrow.png" class="img-fluid" alt="leftarrow">
+<a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+  <img loading="lazy" src="assets/img/leftarrow.png" class="img-fluid" alt="leftarrow">
+  <!-- https://www.srvmedia.com/assets/images/leftarrow.png -->
   <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 <span class="sr-only">Previous</span> -->
+<!-- https://www.srvmedia.com/assets/images/rightarrow.png -->
 </a>
-  <a class="carousel-control-next" href="#homeslider" role="button" data-slide="next">
-  <img loading="lazy" src="https://www.srvmedia.com/assets/images/rightarrow.png" class="img-fluid" alt="rightarrow">
+  <a class="carousel-control-next" href="" role="button" data-slide="next">
+  <img loading="lazy" src="assets/img/rightarrow.png" class="img-fluid" alt="rightarrow">
 </a>
 
 
@@ -1092,9 +1094,27 @@
     autoplaySpeed: 3000,
     dots: false,
     arrows: true
+
   });
 });
   </script>
+
+<script>
+  // Get the carousel element
+  var carousel = document.querySelector('.container');
+
+  // Get the left and right arrow elements
+  var prevButton = document.querySelector('.carousel-control-prev');
+  var nextButton = document.querySelector('.carousel-control-next');
+
+  // Add event listeners to the arrows
+  prevButton.addEventListener('click', function () {
+    carousel.carousel('prev');
+  });
+  nextButton.addEventListener('click', function () {
+    carousel.carousel('next');
+  });
+</script>
 
 </body>
 
