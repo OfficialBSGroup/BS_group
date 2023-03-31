@@ -5536,3 +5536,8 @@ h1.title {
 .navbar-mobile .dropdown .dropdown>.dropdown-active {
   display: block;
 }
+
+.justify-content-between{
+    background-color: #000;
+    height: 100px;
+  }

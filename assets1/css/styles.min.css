@@ -533,7 +533,7 @@ a:hover {
 .mainmenu .collapse ul>li:hover>a,
 .mainmenu ul li ul li a.active {
     background: transparent;
-    color: #e84625;
+    color:  #e84625;
     border-bottom: 0 solid #e84625
 }
 
@@ -1223,7 +1223,7 @@ ul.breadcrumb {
 }
 
 .accordion_rank button.btn.btn-link {
-    background: #a51815;
+    background:  #a51815;
     color: #ffff;
     font-size: 15px;
     text-align: left;
@@ -2995,7 +2995,7 @@ nav.sticky {
     font-size: 16px
 }
 
-.custome_tabs .nav-link {
+/* .custome_tabs .nav-link {
     text-align: center;
     background: #eee;
     color: #000;
@@ -3026,7 +3026,7 @@ nav.sticky {
     top: 100%;
     left: 50%;
     transform: translateX(-50%)
-}
+} */
 
 .animated_text span {
     border-right: .05em solid;
@@ -3779,12 +3779,12 @@ nav.sticky {
     border-radius: 2px
 }
 
-.team_nav_tabs.nav-pills .nav-link.active,
+/* .team_nav_tabs.nav-pills .nav-link.active,
 .team_nav_tabs.nav-pills .show>.nav-link,
 .team_nav_tabs.nav-pills .nav-link:hover {
     color: #fff;
     background-color: #e84625
-}
+} */
 
 .team_content {
     text-align: center;
@@ -4024,7 +4024,7 @@ nav.sticky {
     display: block;
     font-size: 13px;
     line-height: 19px;
-    color:  #ed6238;
+    color:   #ed6238;
     text-align: center;
     margin-left: 1px
 }
@@ -4103,6 +4103,7 @@ nav.sticky {
 .faq_arrow {
     float: right
 }
+
 
 #faq_navTab .nav-link {
     padding: 20px;
@@ -5539,4 +5540,7 @@ h1.title {
   .navbar-mobile .dropdown .dropdown>.dropdown-active {
     display: block;
   }
-  
+  .justify-content-between{
+    background-color: #000;
+    height: 100px;
+  }
