@@ -64,8 +64,11 @@ path {
     }
   
 }
+
+
 .laptop_icons img{
-    height: 30px;
+    height: 40px;
+    width: 20px;
 }
 
 /* social feed carousel */
@@ -152,8 +155,8 @@ a {
 /* social feed carousel */
 
 .section-content1 img.content_img {
-    width: 650px;
-    height: 300px;
+    width: 200px;
+    height: 100px;
     margin: 0 auto 30px;
     position: relative;
 }
@@ -171,7 +174,7 @@ img.img-fluid.content_img.icons_img {
 .content_div .section-content1 {
     position: absolute;
     width: 100%;
-    top: 33% !important
+    top: 33% !important;
 }
 
 .cont_div p {
@@ -4060,7 +4063,7 @@ nav.sticky {
     margin-left: 15px;
     vertical-align: middle;
     display: inline-block;
-    color: #e84625
+    color: #4088ed
 }
 
 .faq .search-faq-section-list .card-header button i.faq_arrow {
