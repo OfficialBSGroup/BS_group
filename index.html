@@ -95,7 +95,7 @@
 <section id="hero">
 <div class="slider">
 
-<div id="slide1" class="slider-page active" data-page="1">
+<div id="slide1" class="slide" data-page="1">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -132,7 +132,7 @@
 
 
 
-<div id="slide2" class="slider-page active" data-page="2">
+<div id="slide2" class="slide" data-page="2">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -169,7 +169,7 @@
 
 
 
- <div id="slide3" class="slider-page active" data-page="3">
+ <div id="slide3" class="slide" data-page="3">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -206,7 +206,7 @@
 
 
 
-  <div id="slide4" class="slider-page active" data-page="4">
+  <div id="slide4" class="slide" data-page="4">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -246,7 +246,7 @@
 
 
 
-<div id="slide5" class="slider-page active" data-page="5">
+  <div id="slide5" class="slide" data-page="5">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -278,17 +278,27 @@
       </g>
     </svg>
   </div>
+
 </div>
-<a class="carousel-control-prev" href="#" role="button" class="slider-button" data-slide="prev">
-  <img loading="lazy" src="assets/img/leftarrow.png" class="img-fluid" alt="leftarrow">
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> -->
+<!-- <a class="carousel-control-prev" href="#" role="button" class="slider-button" data-slide="prev">
+  <img loading="lazy" src="assets/img/leftarrow.png" class="img-fluid" alt="leftarrow"> -->
   <!-- https://www.srvmedia.com/assets/images/leftarrow.png -->
   <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 <span class="sr-only">Previous</span> -->
 <!-- https://www.srvmedia.com/assets/images/rightarrow.png -->
-</a>
+<!-- </a>
   <a class="carousel-control-next" href="" role="button"class="slider-button" data-slide="next">
   <img loading="lazy" src="assets/img/rightarrow.png" class="img-fluid" alt="rightarrow">
-</a>
+</a> -->
 
 
   </section><!-- End Hero -->
@@ -1129,7 +1139,7 @@ sliderButtons.forEach(function(button) {
   });
 });
 </script> -->
-<script>
+<!-- <script>
 const sliderButtons = document.querySelectorAll('.slider-button');
 const sliderPages = document.querySelectorAll('.slider');
 let currentPage = 0;
@@ -1152,6 +1162,36 @@ sliderButtons.forEach(button => {
   });
 });
 
+</script> -->
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  // let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+}
 </script>
 
 </body>

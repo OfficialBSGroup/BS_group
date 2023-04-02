@@ -64,6 +64,9 @@ path {
     }
   
 }
+.laptop_icons img{
+    height: 30px;
+}
 
 /* social feed carousel */
 
@@ -150,8 +153,9 @@ a {
 
 .section-content1 img.content_img {
     width: 650px;
+    height: 300px;
     margin: 0 auto 30px;
-    position: relative
+    position: relative;
 }
 
 img.img-fluid.content_img.icons_img {
@@ -159,8 +163,10 @@ img.img-fluid.content_img.icons_img {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 521px !important
+    width: 521px !important;
+    
 }
+
 
 .content_div .section-content1 {
     position: absolute;
