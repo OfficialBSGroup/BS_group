@@ -1465,7 +1465,7 @@
 }
 
 @media screen and (min-width:1240px) and (max-width:1269px) {
-    .abstract_div img,
+    .abstract_div img
     .abstract_div1 img {
         width: 100px !important
     }
@@ -1507,8 +1507,8 @@
         font-size: 15px !important
     }
     .section-content1 img.content_img {
-        width: 470px !important;
-        height: 270px !important
+        width: 270px !important;
+        height: 170px !important
     }
     .cont_div p {
         font-size: 20px;
@@ -1570,8 +1570,8 @@
         font-size: 15px !important
     }
     .section-content1 img.content_img {
-        width: 550px !important;
-        height: 320px !important
+        width: 350px !important;
+        height: 120px !important
     }
     .cont_div p {
         font-size: 1.2rem;
@@ -1624,8 +1624,8 @@
         font-size: 16px !important
     }
     .section-content1 img.content_img {
-        width: 600px !important;
-        height: 370px !important
+        width: 400px !important;
+        height: 220px !important
     }
     img.img-fluid.content_img.icons_img {
         width: 480px !important;

@@ -1,6 +1,6 @@
 :root {
     --purple: #cc2f0f;
-    --pink: #e84625
+    --pink: #0090f8
 }
 
 @font-face {
@@ -447,23 +447,23 @@ a:hover {
 
 .header_internal.navbar-dark.darkHeader .navbar-nav .nav-link.active,
 .header_internal.navbar-dark.darkHeader .navbar-nav .nav-link:hover {
-    color: #e84625 !important
+    color: #0090f8 !important
 }
 
 .header_internal.navbar-dark .navbar-nav .nav-link.active {
-    color: #e84625 !important
+    color: #0090f8 !important
 }
 
 .header_internal.navbar-dark.darkHeader .navbar-nav .nav-link:hover,
 .header_internal.navbar-dark.darkHeader .navbar-nav .nav-link.active {
-    color: #e84625 !important;
+    color: #0090f8 !important;
     border-bottom: 0 solid transparent
 }
 
 @media(min-width:992px) {
     .navbar-dark .navbar-nav .nav-link:focus,
     .navbar-dark .navbar-nav .nav-link:hover {
-        color: #e84625;
+        color: #0090f8;
         border-bottom: 0 solid transparent;
         transition: all ease-in-out .3s;
         background-color: transparent !important
@@ -522,8 +522,8 @@ a:hover {
 .mainmenu li a:hover,
 .mainmenu li a:focus,
 .navbar-nav>.show>a:hover {
-    color: #e84625;
-    border-bottom: 2px solid #e84625;
+    color: #0090f8;
+    border-bottom: 2px solid #0090f8;
     background: transparent;
     outline: 0
 } */
@@ -531,15 +531,15 @@ a:hover {
 .mainmenu .collapse ul>li:hover>a,
 .mainmenu ul li ul li a.active {
     background: transparent;
-    color: #e84625;
-    border-bottom: 0 solid #e84625
+    color: #0090f8;
+    border-bottom: 0 solid #0090f8
 }
 
 /* .mainmenu .collapse ul ul>li:hover>a,
 .mainmenu .navbar-nav .show .dropdown-menu>li>a:focus,
 .mainmenu .navbar-nav .show .dropdown-menu>li>a:hover {
     background: transparent;
-    color: #e84625
+    color: #0090f8
 } */
 
 /* .mainmenu .collapse ul ul>li>a,
@@ -713,7 +713,7 @@ a:hover {
 }
 
 .homeslider .caption h3 span {
-    color: #e84625;
+    color: #0090f8;
     font-weight: bold;
     line-height: 90px
 }
@@ -737,7 +737,7 @@ a:hover {
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-    background: #e84625
+    background: #0090f8
 }
 
 .homeslider .carousel-indicators li {
@@ -956,7 +956,7 @@ footer .list-unstyled li a {
 footer .list-unstyled li a:hover {
     color: #565656 !important;
     font-weight: bold;
-    border-bottom: 1px solid #e84625
+    border-bottom: 1px solid #0090f8
 }
 
 .footerbox {
@@ -982,7 +982,7 @@ footer p {
 }
 
 .social_icons a:hover {
-    color: #e84625 !important;
+    color: #0090f8 !important;
     background: #fff !important
 }
 
@@ -1157,7 +1157,8 @@ hr {
 }
 
 .inner-header {
-    position: relative
+    position: relative;
+
 }
 
 .section-content {
@@ -1415,7 +1416,7 @@ ul.breadcrumb {
 }
 
 .text_orange {
-    color: #4088ed !important
+    color: #0090f8 !important
 }
 
 .text_yellow {
@@ -1462,7 +1463,7 @@ nav.sticky {
 .solutions {
     color: #fff;
     padding: 80px 0 40px;
-    background: #e84625 0 0 no-repeat padding-box
+    background: #0090f8 0 0 no-repeat padding-box
 }
 
 .life_srv {
@@ -1476,7 +1477,7 @@ nav.sticky {
 }
 
 .textred {
-    color: #e84625
+    color: #0090f8
 }
 
 .partner_sec {
@@ -1671,13 +1672,13 @@ nav.sticky {
 }
 
 .radio-item #installations-radio:checked+label:after {
-    background-color: #e84625;
+    background-color: #0090f8;
     left: 30px;
     transition: .5s all ease
 }
 
 .radio-item #installations-radio:checked+label {
-    color: #e84625;
+    color: #0090f8;
     font-weight: bold
 }
 
@@ -1699,7 +1700,7 @@ nav.sticky {
 }
 
 .text_red {
-    color: #e84625 !important
+    color: #0090f8 !important
 }
 
 .abstract_div {
@@ -1770,7 +1771,7 @@ nav.sticky {
 
 .sol_box {
     position: relative;
-    color: #e84625;
+    color: #000000;
     padding: 20px 10px 10px;
     margin-bottom: 20px;
     transition: all ease-in-out .35s;
@@ -1816,8 +1817,9 @@ nav.sticky {
 
 .sol_box a {
     text-decoration: none !important;
-    color: #e84625 !important;
-    opacity: 1 !important
+    color: #0090f8 !important;
+    opacity: 1 !important;
+    /* #0090f8  */
 }
 
 .sol_box p {
@@ -1845,7 +1847,7 @@ nav.sticky {
 }
 
 .sol_box:hover {
-    color: #e84625 !important;
+    color: #0090f8 !important;
     background: #fff;
     -webkit-transition-delay: .05s;
     transition-delay: .05s;
@@ -1861,7 +1863,7 @@ nav.sticky {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    color: #e84625 !important;
+    color: #0090f8 !important;
     -webkit-transition-delay: .05s;
     transition-delay: .05s;
     -webkit-transition-duration: .35s;
@@ -1978,7 +1980,7 @@ nav.sticky {
 .dotsred {
     top: 2px;
     position: absolute;
-    background: #e84625;
+    background: #0090f8;
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -2177,7 +2179,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -2214,7 +2216,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -2248,7 +2250,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -2285,7 +2287,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -2641,12 +2643,15 @@ nav.sticky {
 }
 
 .heading_text h1 {
-    font-size: 76px;
+    font-size: 82px;
     line-height: 86px
+}
+.mb-0 span{
+    font-size: 40px;
 }
 
 .heading_text2 h2 {
-    font-size: 82px;
+    font-size: 50px;
     line-height: 82px
 }
 
@@ -2677,7 +2682,7 @@ nav.sticky {
     justify-content: center;
     background: linear-gradient(176deg, rgba(0, 0, 0, 0.4) 0, rgba(232, 70, 37, 0.4) 100%)
 }
-
+/* #0090f8 */
 .us_video h1 {
     font-size: 260px;
     color: #ffff
@@ -2688,7 +2693,7 @@ nav.sticky {
     position: absolute;
     top: 43%;
     left: 47%;
-    background: rgba(232, 70, 37, 0.85);
+    background: rgba(255, 10, 10, 0.85);
     padding: 15px;
     border-radius: 10px
 }
@@ -2713,12 +2718,12 @@ nav.sticky {
 }
 
 .solutions_div .sol_box h5 {
-    color: #e84625
+    color:  #0090f8
 }
 
 .solutions_div .sol_box:hover {
     color: #fff !important;
-    background: #e84730 !important
+    background:  #0090f8 !important
 }
 
 .solutions_div .sol_box:hover h5,
@@ -2939,7 +2944,7 @@ nav.sticky {
 }
 
 .btn_pri {
-    background-color: #e84625
+    background-color: #0090f8
 }
 
 .btn_submit1 {
@@ -3007,7 +3012,7 @@ nav.sticky {
 
 .custome_tabs .nav-link.active {
     text-align: center;
-    background: #e84625;
+    background: #0090f8;
     color: #FFF;
     border-radius: 0;
     border: 0;
@@ -3019,7 +3024,7 @@ nav.sticky {
     content: "";
     position: absolute;
     border-left: 20px solid transparent;
-    border-top: 20px solid #e84625;
+    border-top: 20px solid #0090f8;
     border-right: 20px solid transparent;
     top: 100%;
     left: 50%;
@@ -3171,13 +3176,12 @@ nav.sticky {
     transition: all ease-in-out .3s;
     margin-bottom: 30px;
 }
-
 .careers_opening .row .col-md-4 {
     margin-bottom: 1rem
 }
 
 .job_card:hover {
-    background: #e84625;
+    background: #0090f8;
     /* color: #fff */
 }
 
@@ -3280,9 +3284,9 @@ nav.sticky {
 
 .career_view_details_btn {
     text-decoration: none !important;
-    /* border-bottom: 1px solid #e84625; */
+    /* border-bottom: 1px solid #0090f8; */
     font-size: 14px;
-    color: #e84625;
+    color: #0090f8;
     cursor: pointer;
     position: relative;
     z-index: 99
@@ -3304,7 +3308,7 @@ nav.sticky {
     display: inline-block;
     font-family: Geomanist-Bold;
     text-decoration: none !important;
-    background: #e84625;
+    background: #0090f8;
     font-size: 13px;
     padding: 10px 12px 8px;
     color: #fff !important;
@@ -3490,7 +3494,7 @@ nav.sticky {
     border: 0;
     padding: 18px;
     border-radius: 0;
-    background: transparent linear-gradient(289deg, #cc2f0f 0, #e84625 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(289deg, #cc2f0f 0, #0090f8 100%) 0 0 no-repeat padding-box;
     color: #fff;
     font-weight: bold;
     margin-left: -5px;
@@ -3506,7 +3510,7 @@ nav.sticky {
 }
 
 .bgbanner {
-    background: #e84625 0 0 no-repeat padding-box;
+    background: #0090f8 0 0 no-repeat padding-box;
     width: 100%;
     height: 70px;
     display: block
@@ -3536,7 +3540,7 @@ nav.sticky {
 }
 
 .life_srv_page_header {
-    background: #e84625 !important;
+    background: #0090f8 !important;
     min-height: 300px
 }
 
@@ -3663,8 +3667,8 @@ nav.sticky {
 }
 
 .life_what_box:hover {
-    background: #e84625 0 0 no-repeat padding-box;
-    border: .5px solid #e84625 !important
+    background: #0090f8 0 0 no-repeat padding-box;
+    border: .5px solid #0090f8 !important
 }
 
 .life_what_box img {
@@ -3702,14 +3706,14 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
 }
 
 .viewall_btn2:hover {
-    color: #e84625 !important
+    color: #0090f8 !important
 }
 
 .viewall_btn2:hover::after {
@@ -3729,7 +3733,7 @@ nav.sticky {
 .date_cont {
     font-family: Geomanist-Medium;
     font-size: 14px;
-    color: #e84625;
+    color: #0090f8;
     margin-bottom: 15px
 }
 
@@ -3757,7 +3761,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -3771,9 +3775,9 @@ nav.sticky {
 
 .team_nav_tabs li a {
     margin: 10px;
-    border: 1px solid #e84625;
+    border: 1px solid #0090f8;
     transition: all ease-in-out .3s;
-    color: #e84625;
+    color: #0090f8;
     border-radius: 2px
 }
 
@@ -3781,7 +3785,7 @@ nav.sticky {
 .team_nav_tabs.nav-pills .show>.nav-link,
 .team_nav_tabs.nav-pills .nav-link:hover {
     color: #fff;
-    background-color: #e84625
+    background-color: #0090f8
 }
 
 .team_content {
@@ -3798,7 +3802,7 @@ nav.sticky {
     position: absolute;
     width: 30%;
     content: "";
-    border-bottom: 2px solid #e84625;
+    border-bottom: 2px solid #0090f8;
     display: flex;
     margin-top: 2px;
     transition: .5s
@@ -3833,7 +3837,7 @@ nav.sticky {
 
 .heading_txt_mob h2 {
     font-size: 20px;
-    color: #e84625;
+    color: #0090f8;
     font-family: GloriaHallelujah-Regular
 }
 
@@ -3848,7 +3852,7 @@ nav.sticky {
 
 .time_line1 {
     padding: 80px 0 40px;
-    background: #e84625 0 0 no-repeat padding-box
+    background: #0090f8 0 0 no-repeat padding-box
 }
 
 .timeline_start>.bb1 {
@@ -4052,7 +4056,11 @@ nav.sticky {
     margin-left: 15px;
     vertical-align: middle;
     display: inline-block;
+<<<<<<< HEAD
     color: #4088ed
+=======
+    color: #0090f8;
+>>>>>>> 8147dc1 (New change)
 }
 
 .faq .search-faq-section-list .card-header button i.faq_arrow {
@@ -4128,7 +4136,7 @@ img[src="undefined"] {
 
 #faq_navTab .nav-link.active,
 #faq_navTab .nav-link:hover {
-    background-color: #e84625;
+    background-color: #0090f8;
     position: relative;
     border: 0 !important;
     z-index: 99;
@@ -4237,7 +4245,7 @@ img[src="undefined"] {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #e84625;
+    background: #0090f8;
     left: 10px;
     top: 40px
 }
@@ -4248,7 +4256,7 @@ img[src="undefined"] {
     width: 1px;
     height: calc(80% - 10%);
     border-radius: 50%;
-    background: #e84625;
+    background: #0090f8;
     right: 15px;
     top: 10%
 }
@@ -4259,7 +4267,7 @@ img[src="undefined"] {
     letter-spacing: 0;
     color: #000 !important;
     opacity: 1;
-    border-bottom: 5px solid #e84625;
+    border-bottom: 5px solid #0090f8;
     z-index: 9
 }
 
@@ -4314,7 +4322,7 @@ img[src="undefined"] {
 .addReadMore .readLess {
     font-weight: bold;
     margin-left: 2px;
-    color: #e84625;
+    color: #0090f8;
     cursor: pointer
 }
 
@@ -4438,7 +4446,7 @@ img[src="undefined"] {
 
 .industries_box .sol_box a {
     text-decoration: none !important;
-    color: #e84625 !important;
+    color: #0090f8 !important;
     opacity: 1 !important
 }
 
@@ -4545,7 +4553,7 @@ img[src="undefined"] {
 
 .sol_box1 a {
     text-decoration: none !important;
-    color: #e84625 !important;
+    color: #0090f8 !important;
     opacity: 1 !important
 }
 
@@ -4576,7 +4584,7 @@ img[src="undefined"] {
 
 .sol_box1:hover {
     color: #fff !important;
-    background: #e84625;
+    background: #0090f8;
     -webkit-transition-delay: .05s;
     transition-delay: .05s;
     -webkit-transition-duration: .05s;
@@ -4696,7 +4704,7 @@ img[src="undefined"] {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #e84625;
+    background: #0090f8;
     left: 10px;
     top: 40px
 }
@@ -4707,7 +4715,7 @@ img[src="undefined"] {
     width: 1px;
     height: calc(80% - 10%);
     border-radius: 50%;
-    background: #e84625;
+    background: #0090f8;
     right: 15px;
     top: 10%
 }
@@ -4718,7 +4726,7 @@ img[src="undefined"] {
     letter-spacing: 0;
     color: #000 !important;
     opacity: 1;
-    border-bottom: 5px solid #e84625;
+    border-bottom: 5px solid #0090f8;
     z-index: 9
 }
 
@@ -4882,7 +4890,7 @@ img[src="undefined"] {
 }
 
 .homeslider_industry .caption h3 span {
-    color: #e84625;
+    color: #0090f8;
     font-weight: bold;
     line-height: 90px
 }
@@ -4915,12 +4923,12 @@ img[src="undefined"] {
 }
 
 df-messenger {
-    --df-messenger-bot-message: #e84625;
-    --df-messenger-button-titlebar-color: #e84625;
+    --df-messenger-bot-message: #0090f8;
+    --df-messenger-button-titlebar-color: #0090f8;
     --df-messenger-button-titlebar-font-color: #fff;
     --df-messenger-chat-background-color: #fafafa;
     --df-messenger-font-color: #000;
-    --df-messenger-send-icon: #e84625;
+    --df-messenger-send-icon: #0090f8;
     --df-messenger-user-message: #fff
 }
 
@@ -4952,7 +4960,7 @@ df-messenger {
 path.animated-path {
     fill: url(#bottom-to-top);
     stroke-width: 2;
-    stroke: #e84625
+    stroke: #0090f8
 }
 
 path.insights-ideas-impact {
@@ -4972,7 +4980,7 @@ path.insights-ideas-impact {
         fill: none
     }
     100% {
-        fill: #e84625
+        fill: #0090f8
     }
 }
 
@@ -5060,7 +5068,7 @@ path.insights-ideas-impact {
 }
 
 #cookieModal .modal-dialog .buttons .btn-orange {
-    background-color: #e84625;
+    background-color: #0090f8;
     margin-right: 10rem
 }
 
@@ -5122,7 +5130,8 @@ path.insights-ideas-impact {
 
 .partner_sec .row .col-lg-4 {
     display: flex;
-    align-items: center
+    align-items: center;
+
 }
 
 .blink {
@@ -5180,7 +5189,7 @@ h1.title {
 
 .text_decoration {
     text-decoration: underline;
-    color: #e84625 !important;
+    color: #0090f8 !important;
 }
 
 @media screen and (max-width:780px) {
@@ -5333,7 +5342,7 @@ h1.title {
     height: 2px;
     bottom: 3px;
     left: 30px;
-    background-color: #4088ed;
+    background-color: #0090f8;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -5378,7 +5387,7 @@ h1.title {
     font-size: 14px;
     font-weight: 500;
     text-transform: none;
-    color: #4088ed;
+    color: #0090f8;
   }
   
   .navbar .dropdown ul a i {
@@ -5388,7 +5397,7 @@ h1.title {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #4088ed;
+    color: #0090f8;
   }
   
   .navbar .dropdown:hover>ul {
@@ -5482,7 +5491,7 @@ h1.title {
   .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #4088ed;
+    color: #0090f8;
   }
   
   .navbar-mobile a:hover,
@@ -5530,7 +5539,7 @@ h1.title {
   .navbar-mobile .dropdown .dropdown ul a:hover,
   .navbar-mobile .dropdown .dropdown ul .active:hover,
   .navbar-mobile .dropdown .dropdown ul li:hover>a {
-    color: #4088ed;
+    color: #0090f8;
   }
   
   .navbar-mobile .dropdown>.dropdown-active,
