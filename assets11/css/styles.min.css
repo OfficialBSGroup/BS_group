@@ -2545,51 +2545,51 @@ nav.sticky {
 }
 
 .sol_box.white .branding {
-    background-image: url(../images/solutions/icons-orange/branding.svg)
+    background-image: url(../images/solutions/icons-orange/branding.png)
 }
 
 .sol_box.white .it-product-development {
-    background-image: url(../images/solutions/icons-orange/it-product-development.svg)
+    background-image: url(../images/solutions/icons-orange/it-product-development.png)
 }
 
 .sol_box.white .pr-public-relations {
-    background-image: url(../images/solutions/icons-orange/public-relations.svg)
+    background-image: url(../images/solutions/icons-orange/public-relations.png)
 }
 
 .sol_box.white .digital-marketing {
-    background-image: url(../images/solutions/icons-orange/digital-marketing.svg)
+    background-image: url(../images/solutions/icons-orange/digital-marketing.png)
 }
 
 .sol_box.white .web-development {
-    background-image: url(../images/solutions/icons-orange/web-development.svg)
+    background-image: url(../images/solutions/icons-orange/web-development.png)
 }
 
 .sol_box.white .seo {
-    background-image: url(../images/solutions/icons-orange/seo.svg)
+    background-image: url(../images/solutions/icons-orange/seo.png)
 }
 
 .sol_box.white .performance-marketing {
-    background-image: url(../images/solutions/icons-orange/performance-marketing.svg)
+    background-image: url(../images/solutions/icons-orange/performance-marketing.png)
 }
 
 .sol_box.white .social-media-marketing {
-    background-image: url(../images/solutions/icons-orange/social-media-marketing.svg)
+    background-image: url(../images/solutions/icons-orange/social-media-marketing.png)
 }
 
 .sol_box.white .video-production {
-    background-image: url(../images/solutions/icons-orange/video-production.svg)
+    background-image: url(../images/solutions/icons-orange/video-production.png)
 }
 
 .sol_box.white .content-marketing {
-    background-image: url(../images/solutions/icons-orange/content-marketing.svg)
+    background-image: url(../images/solutions/icons-orange/content-marketing.png)
 }
 
 .sol_box.white .consulting {
-    background-image: url(../images/solutions/icons-orange/consulting.svg)
+    background-image: url(../images/solutions/icons-orange/consulting.png)
 }
 
 .sol_box.white .data-analytics {
-    background-image: url(../images/solutions/icons-orange/data-analytics.svg)
+    background-image: url(../images/solutions/icons-orange/data-analytics.png)
 }
 
 .sol_box.white:hover .branding {
@@ -4052,11 +4052,9 @@ nav.sticky {
     margin-left: 15px;
     vertical-align: middle;
     display: inline-block;
-<<<<<<< HEAD
-    color: #4088ed
-=======
-    color: #0090f8
->>>>>>> 8147dc1 (New change)
+
+    color: #0090f8;
+
 }
 
 .faq .search-faq-section-list .card-header button i.faq_arrow {
