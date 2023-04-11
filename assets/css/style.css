@@ -151,7 +151,8 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 200px;
+  height: 200px;
+  
 
 }
 
@@ -423,8 +424,9 @@ h6 {
 }
 
 .container {
-  height: 510px;
+  height:510px;
 }
+
 
 .col-lg-7 {
   position: relative;
@@ -1043,6 +1045,11 @@ section {
 .features .icon-box:hover {
   background: #ebebff;
 }
+.image1{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
 
 /*--------------------------------------------------------------
 # Counts
@@ -1066,7 +1073,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #1acc8d;
+  background: #0090f8;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -1082,7 +1089,8 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #010483;
+  /* color: #010483; */
+  color: #0090f8;
 }
 
 .counts .count-box p {
@@ -1091,7 +1099,16 @@ section {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
-
+.sect{
+  display: flex;
+  justify-content: space-around;
+}
+.sect img{
+  height: 300px;
+  width: 500px;
+  margin-top: 40px;
+ 
+}
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
@@ -1481,7 +1498,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #34e5a6;
+  color: #0090f8;
 }
 
 .faq .faq-list .icon-show,
@@ -1506,7 +1523,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1acc8d;
+  color: #0090f8;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1521,6 +1538,9 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
+.container2{
+  padding: 20px 100px;
 }
 
 /*--------------------------------------------------------------
