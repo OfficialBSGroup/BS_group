@@ -205,7 +205,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #1c59f6;
+  background-color: #0090f5;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -250,7 +250,7 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #1c59f6;
+  color:  #0090f5;
 }
 
 .navbar .dropdown ul a i {
@@ -260,7 +260,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1c59f6;
+  color:  #0090f5;
 }
 
 .navbar .dropdown:hover>ul {
@@ -354,7 +354,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1c59f6;
+  color:  #0090f5;
 }
 
 .navbar-mobile a:hover,
@@ -402,7 +402,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #1c59f6;
+  color:  #0090f5;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
@@ -482,11 +482,11 @@ h6 {
 
 
 #slide1 {
-  background-image: url('../../assets/img/20230111_142225.jpg');
+  background-image: url('../../assets/img/ARV_8745-1.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
-
+ 
 #slide1::before {
   content: "";
   display: block;
@@ -621,11 +621,11 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #1c59f6;
+  background:  #0090f5;
 }
 
 #hero .btn-get-started:hover {
-  background: #1c59f6;
+  background:  #0090f5;
 }
 
 #hero .animated {
@@ -851,7 +851,11 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  padding: 40px 0 0 0;
+  padding: 0px 0 0 0;
+  /* position: relative;
+  bottom: 70px;
+  z-index: -15px; */
+  background-color: #0090f5;
 }
 
 .about .icon-boxes h3 {
@@ -914,7 +918,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
+  /* background: url("../img/pexels-christina-morillo-1181562.jpg") center center no-repeat; */
   background-size: contain;
   min-height: 300px;
 }
@@ -1008,6 +1012,9 @@ section {
   background: #f5f5ff;
   transition: ease-in-out 0.3s;
 }
+.section-title p{
+  color: #0090f5;
+}
 
 .features .icon-box i {
   font-size: 32px;
@@ -1024,12 +1031,13 @@ section {
 }
 
 .features .icon-box h3 a {
-  color: #010483;
+  color: #0090f5;
   transition: ease-in-out 0.3s;
+  margin-left: 10px;
 }
 
 .features .icon-box h3 a:hover {
-  color: #01036f;
+  color: #000;
 }
 
 .features .icon-box:hover {

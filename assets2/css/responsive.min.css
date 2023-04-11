@@ -1624,12 +1624,14 @@
         font-size: 16px !important
     }
     .section-content1 img.content_img {
-        width: 500px !important;
-        height: 300px !important
+        width: 600px !important;
+        height: 300px !important;
+        position: relative;
+        bottom: 25px;
     }
     img.img-fluid.content_img.icons_img {
         width: 480px !important;
-        height: 262px !important
+        height: 246px !important
     }
     .heading_text3 h2 {
         font-size: 32px !important

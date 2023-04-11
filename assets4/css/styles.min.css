@@ -5542,3 +5542,14 @@ h1.title {
     background-color: #000;
     height: 100px;
   }
+
+  .container1{
+    height: 80px;
+    width: 100%;
+  }
+  .logo{
+margin-left: 20px;
+  }
+.navbar ul{
+    margin-right: 50px;
+}
