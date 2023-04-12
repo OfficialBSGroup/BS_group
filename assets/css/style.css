@@ -484,7 +484,7 @@ h6 {
 
 
 #slide1 {
-  background-image: url('../../assets/img/ARV_8745-1.jpg');
+  background-image: url('../../assets/img/20230130_154232.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -553,7 +553,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.1);
 } */
 #slide5 {
-  background-image: url('../../assets/img/20230213_151336.png');
+  background-image: url('../../assets/img/20230111_141444_01_saved\ \(1\).jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1163,10 +1163,11 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  /* background: url("../img/cta-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
+  height: 500px;
 }
 
 .testimonials::before {
@@ -1176,7 +1177,8 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(1, 3, 111, 0.8);
+  /* background: rgba(1, 3, 111, 0.8); */
+  background: #0090f8;
 }
 
 .testimonials .section-header {
@@ -1307,7 +1309,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #01036f;
+  color: #0090f8;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1327,7 +1329,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #01036f;
+  color: #0090f8;
 }
 
 .team .member .social {
@@ -1336,7 +1338,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #01036f;
+  color: #0090f8;
 }
 
 .team .member .social a:hover {
