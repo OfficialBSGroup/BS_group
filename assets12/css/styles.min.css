@@ -3053,8 +3053,10 @@ nav.sticky {
 }
 
 .heading_text h2 {
-    font-size: 52px
+    font-size: 52px;
+    
 }
+
 
 .fas_div {
     background: #1c1c1c;
@@ -3322,7 +3324,7 @@ nav.sticky {
 .custome_tabs .nav-link.active {
     text-align: center;
     background: #0090f8;
-    color: #FFF;
+    color: #fff;
     border-radius: 0;
     border: 0;
     line-height: 1;
@@ -3378,7 +3380,7 @@ nav.sticky {
 }
 
 .mission ul li {
-    color: #fff;
+    color: #000;
     font-size: 1.2rem
 }
 
@@ -5707,3 +5709,31 @@ h1.title {
           margin: -20px 0 30px 0;
         }
       }
+
+
+      /* .col-md-12{
+        position: relative;
+        bottom: 150px;
+      } */
+
+      .text-light {
+        color: #0090f8!important;
+    }
+
+    .image1 img{
+        position: relative;
+        top: 50px;
+        left: 50px;
+        height: 400px;
+        width: 600px;
+    }
+
+    
+
+      
+
+     
+
+
+
+     
