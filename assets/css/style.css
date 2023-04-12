@@ -1,3 +1,4 @@
+
 /**
 * Template Name: Bootslander
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -542,6 +543,7 @@ h6 {
   background-attachment: fixed;
 }
 
+
 /* #slide4::before {
   content: "";
   display: block;
@@ -895,6 +897,45 @@ section {
 
 .about .icon-box:hover .icon i {
   color: #fff;
+}
+
+.child_flex {
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	height: 50vh;
+}
+
+.pic {
+	flex: 70%;
+	align-items: center;
+	margin-bottom: 2px;
+}
+
+.pic img {
+	width: 19.5vw;
+}
+
+.member-info {
+	flex: 30%;
+	background-color: white;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	width: 19.5vw;
+}
+
+.parent_team_flex {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#child_flexx {
+	flex: 30%;
+}
+
+.team_text_flex {
+	flex: 70%;
+	text-align: center;
 }
 
 .about .icon-box .title {
