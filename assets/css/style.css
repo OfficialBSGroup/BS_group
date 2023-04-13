@@ -1906,11 +1906,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     font-size: calc(1rem * var(--bfso, 1));
-}
+} */
 
-body,
+/* body,
 html,
 p,
 ul,
@@ -1927,16 +1927,16 @@ li {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: geometricprecision;
     white-space: normal;
-}
+} */
 
-li {
+/* li {
     text-align: unset;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 @font-face {
     font-family: YAEDY6vXgZk-0;
