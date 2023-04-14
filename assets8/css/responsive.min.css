@@ -388,7 +388,7 @@
         position: relative;
         width: 100%;
         top: 0;
-        background: #e84625;
+        background: #0090f8;
         padding: 40px 0 120px;
         margin-bottom: 2rem;
         top: auto !important;
@@ -498,7 +498,7 @@
         margin-top: 40px !important
     }
     .mission .heading_text h1 .text-light {
-        color: #e84625 !important
+        color: #0090f8 !important
     }
     .title1 {
         font-size: 40px;
@@ -1020,7 +1020,7 @@
         font-size: 18px
     }
     .life_srv_page_header {
-        background: #e84625 !important;
+        background: #0090f8 !important;
         min-height: 200px
     }
 }
@@ -1033,7 +1033,7 @@
         font-size: 16px !important
     }
     .life_srv_page_header {
-        background: #e84625 !important;
+        background: #0090f8 !important;
         min-height: 200px
     }
     .footerbox1 {

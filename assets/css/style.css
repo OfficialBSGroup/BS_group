@@ -10,9 +10,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
+html,body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
 }
 
 a {
@@ -493,6 +498,7 @@ h6 {
   background-image: url('../../assets/img/20230130_154232.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
  
 #slide1::before {
@@ -512,6 +518,7 @@ h6 {
   background-image: url('../../assets/img/ARV_8745-1.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 /* #slide2::before {
@@ -530,6 +537,7 @@ h6 {
   background-image: url('../../assets/img/ARV_9662.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 /* #slide3::before {
@@ -546,6 +554,7 @@ h6 {
   background-image: url('../../assets/img/20230213_151336.png');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 
@@ -563,6 +572,7 @@ h6 {
   background-image: url('../../assets/img/20230111_141444_01_saved\ \(1\).jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 /* #slide5::before {
@@ -1750,7 +1760,8 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
-  height: 800px;
+  height: auto;
+  overflow: hidden;
 
 }
 
