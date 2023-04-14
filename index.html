@@ -44,155 +44,166 @@
   ======================================================== -->
 
   <!-- canva -->
-  <!-- <noscript>  <style>    .animated {      animation-play-state: running !important;    }    @keyframes pulse {}  </style></noscript>
+  <noscript>  <style>    .animated {      animation-play-state: running !important;    }    @keyframes pulse {}  </style></noscript>
+  <script nonce='a8b27127-5125-4adb-a370-7f5c7037407a'>
+      ! function() {
+          "use strict";
 
-  
-    <script nonce='618a19ee-01f4-4f4c-a95a-72898ca37d39'>
-        ! function() {
-            "use strict";
+          function e(e, t) {
+              let n = (null == t ? void 0 : t.runOnLoad) ? void 0 : document.documentElement.clientWidth,
+                  o = (null == t ? void 0 : t.runOnLoad) ? void 0 : window.innerHeight;
+              const r = () => {
+                      const r = {
+                              runOnLoad: !1,
+                              runOnWidthChange: !0,
+                              runOnHeightChange: !1,
+                              ...t
+                          },
+                          i = document.documentElement.clientWidth,
+                          d = window.innerHeight,
+                          c = o !== d;
+                      (n !== i && r.runOnWidthChange || c && r.runOnHeightChange) && e(), n = i, o = d
+                  },
+                  i = function(e, t) {
+                      let n;
+                      return (...o) => {
+                          clearTimeout(n), n = setTimeout((() => {
+                              e(...o)
+                          }), t)
+                      }
+                  }(r, 100);
+              window.addEventListener("resize", i), (null == t ? void 0 : t.runOnLoad) && ("loading" === document.readyState ? window.addEventListener("DOMContentLoaded", r) : r())
+          }
 
-            function n(n, t) {
-                let e = (null == t ? void 0 : t.runOnLoad) ? void 0 : document.documentElement.clientWidth,
-                    o = (null == t ? void 0 : t.runOnLoad) ? void 0 : window.innerHeight;
-                const r = () => {
-                        const r = {
-                                runOnLoad: !1,
-                                runOnWidthChange: !0,
-                                runOnHeightChange: !1,
-                                ...t
-                            },
-                            i = document.documentElement.clientWidth,
-                            d = window.innerHeight,
-                            c = o !== d;
-                        (e !== i && r.runOnWidthChange || c && r.runOnHeightChange) && n(), e = i, o = d
-                    },
-                    i = function(n, t) {
-                        let e;
-                        return (...o) => {
-                            clearTimeout(e), e = setTimeout((() => {
-                                n(...o)
-                            }), t)
-                        }
-                    }(r, 100);
-                window.addEventListener("resize", i), (null == t ? void 0 : t.runOnLoad) && ("loading" === document.readyState ? window.addEventListener("DOMContentLoaded", r) : r())
-            }
+          function t(e, t, n = .001) {
+              return Math.abs(e - t) < n
+          }
 
-            function t(n, t, e = .001) {
-                return Math.abs(n - t) < e
-            }
+          function n(e, t) {
+              return window.getComputedStyle(e).getPropertyValue(t)
+          }
 
-            function e(n, t) {
-                return window.getComputedStyle(n).getPropertyValue(t)
-            }
+          function o(e, t, n) {
+              e.style.setProperty(t, n)
+          }
 
-            function o(n, t, e) {
-                n.style.setProperty(t, e)
-            }
+          function r(e, t) {
+              const o = document.createElement("div");
+              o.style.setProperty(e, t), document.body.append(o);
+              const r = n(o, e);
+              return o.remove(), r
+          }
 
-            function r(n, t) {
-                const o = document.createElement("div");
-                o.style.setProperty(n, t), document.body.append(o);
-                const r = e(o, n);
-                return o.remove(), r
-            }
+          function i() {
+              const i = function() {
+                      const e = parseFloat(r("font-size", "0.1px"));
+                      return e > 1 ? e : 0
+                  }(),
+                  d = function(e) {
+                      const t = 2 * Math.max(e, 1);
+                      return t / parseFloat(r("font-size", `${t}px`))
+                  }(i);
+              if (function(t) {
+                      if (0 === t) return;
+                      o(document.documentElement, "--minfs", `${t}px`), e((() => {
+                          const e = 100 * t,
+                              {
+                                  clientWidth: n
+                              } = document.documentElement;
+                          o(document.documentElement, "--rzf", e > n ? (n / e).toPrecision(4) : null)
+                      }), {
+                          runOnLoad: !0
+                      })
+                  }(i * Math.max(1, d)), t(d, 1)) return;
+              const c = t(parseFloat(n(document.documentElement, "font-size")), parseFloat(r("grid-template-columns", "1rem")));
+              o(document.documentElement, c ? "--rfso" : "--bfso", d.toPrecision(4))
+          }
 
-            function i() {
-                const i = function() {
-                        const n = parseFloat(r("font-size", "0.1px"));
-                        return n > 1 ? n : 0
-                    }(),
-                    d = function(n) {
-                        const t = 2 * Math.max(n, 1);
-                        return t / parseFloat(r("font-size", `${t}px`))
-                    }(i);
-                if (function(t) {
-                        if (0 === t) return;
-                        o(document.documentElement, "--minfs", `${t}px`), n((() => {
-                            const n = 100 * t,
-                                {
-                                    clientWidth: e
-                                } = document.documentElement;
-                            o(document.documentElement, "--rzf", n > e ? (e / n).toPrecision(4) : null)
-                        }), {
-                            runOnLoad: !0
-                        })
-                    }(i * Math.max(1, d)), t(d, 1)) return;
-                const c = t(parseFloat(e(document.documentElement, "font-size")), parseFloat(r("grid-template-columns", "1rem")));
-                o(document.documentElement, c ? "--rfso" : "--bfso", d.toPrecision(4))
-            }
+          function d() {
+              document.querySelectorAll("img, image, video, svg").forEach((e => e.addEventListener("contextmenu", (e => e.preventDefault()))))
+          }
+          var c;
+          const a = "undefined" != typeof window ? null === (c = window.navigator) || void 0 === c ? void 0 : c.userAgent : void 0;
+          const u = !(!a || (l = a, !l.match(/AppleWebKit\//) || l.match(/Chrome\//) || l.match(/Chromium\//)));
+          var l;
 
-            function d() {
-                document.querySelectorAll("img, image, video, svg").forEach((n => n.addEventListener("contextmenu", (n => n.preventDefault()))))
-            }
-            var c;
-            const u = "undefined" != typeof window ? null === (c = window.navigator) || void 0 === c ? void 0 : c.userAgent : void 0;
-            const a = !(!u || (m = u, !m.match(/AppleWebKit\//) || m.match(/Chrome\//) || m.match(/Chromium\//)));
-            var m;
+          function s() {
+              document.documentElement.style.setProperty("--ffsd", "0.5px")
+          }
 
-            function l() {
-                document.documentElement.style.setProperty("--ffsd", "0.5px")
-            }
+          function m() {
+              const e = window.innerWidth - document.documentElement.clientWidth;
+              var t, n, o;
+              t = document.documentElement, n = "--sbw", o = e >= 0 ? `${e}px` : null, t.style.setProperty(n, o)
+          }
 
-            function s() {
-                const n = window.innerWidth - document.documentElement.clientWidth;
-                var t, e, o;
-                t = document.documentElement, e = "--sbw", o = n >= 0 ? `${n}px` : null, t.style.setProperty(e, o)
-            }
+          function f(e) {
+              const t = Array.from(e.children);
+              t.forEach(((e, n) => {
+                  if (e.hasAttribute("data-foreign-object-container")) e.style.transformOrigin = "", e.style.transform = "";
+                  else {
+                      const o = document.createElement("div");
+                      o.setAttribute("data-foreign-object-container", ""), e.insertAdjacentElement("beforebegin", o), e.remove(), o.append(e), t[n] = o
+                  }
+              }));
+              const n = e.getScreenCTM();
+              if (!n) return;
+              const {
+                  a: o,
+                  b: r,
+                  c: i,
+                  d: d
+              } = n;
+              t.forEach((e => {
+                  if (!e.hasAttribute("data-foreign-object-container")) return;
+                  const {
+                      style: t
+                  } = e;
+                  t.transformOrigin = "0px 0px", t.transform = `matrix(${o}, ${r}, ${i}, ${d}, 0, 0)`
+              }))
+          }
+          let h, p;
 
-            function f(n) {
-                const t = Array.from(n.children);
-                t.forEach(((n, e) => {
-                    if (n.hasAttribute("data-foreign-object-container")) n.style.transformOrigin = "", n.style.transform = "";
-                    else {
-                        const o = document.createElement("div");
-                        o.setAttribute("data-foreign-object-container", ""), o.style.willChange = "transform", n.insertAdjacentElement("beforebegin", o), n.remove(), o.append(n), t[e] = o
-                    }
-                }));
-                const e = n.getScreenCTM();
-                if (!e) return;
-                const {
-                    a: o,
-                    b: r,
-                    c: i,
-                    d: d
-                } = e;
-                t.forEach((n => {
-                    if (!n.hasAttribute("data-foreign-object-container")) return;
-                    const {
-                        style: t
-                    } = n;
-                    t.transformOrigin = "0px 0px", t.transform = `matrix(${o}, ${r}, ${i}, ${d}, 0, 0)`
-                }))
-            }
-            let h;
-
-            function g() {
-                h || (h = Array.from(document.querySelectorAll("foreignObject")).filter((n => 0 === n.getBoundingClientRect().width))), Array.from(h).forEach(f)
-            }[function() {
-                a && ("loading" === document.readyState ? window.addEventListener("DOMContentLoaded", l) : l())
-            }, function() {
-                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", i) : i()
-            }, function() {
-                n(s, {
-                    runOnLoad: !0
-                })
-            }, function() {
-                a && n(g, {
-                    runOnLoad: !0
-                })
-            }, function() {
-                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", d) : d()
-            }].forEach((n => n()))
-        }();
-    </script>
-    <script nonce="618a19ee-01f4-4f4c-a95a-72898ca37d39">
-        window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
-    </script>
-    <script nonce="618a19ee-01f4-4f4c-a95a-72898ca37d39">
-        window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
-    </script>
- -->
-
+          function g() {
+              p || (p = new Map, document.querySelectorAll("svg").forEach((e => {
+                      const t = Array.from(e.querySelectorAll("foreignObject")).filter((e => 0 === e.getBoundingClientRect().width));
+                      t.length > 0 && p.set(e, t)
+                  }))), Array.from(p.values()).flat().forEach(f),
+                  function() {
+                      if (clearInterval(h), !p || 0 === p.size) return;
+                      let e = 0;
+                      h = setInterval((() => {
+                          const t = Array.from(p.keys());
+                          window.requestAnimationFrame((() => {
+                              t.forEach((e => {
+                                  e.parentElement.style.setProperty("display", "none"), e.parentElement.offsetHeight, e.parentElement.style.removeProperty("display")
+                              }))
+                          })), e++ > 5 && clearInterval(h)
+                      }), 500)
+                  }()
+          }[function() {
+              u && ("loading" === document.readyState ? window.addEventListener("DOMContentLoaded", s) : s())
+          }, function() {
+              "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", i) : i()
+          }, function() {
+              e(m, {
+                  runOnLoad: !0
+              })
+          }, function() {
+              u && e(g, {
+                  runOnLoad: !0
+              })
+          }, function() {
+              "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", d) : d()
+          }].forEach((e => e()))
+      }();
+  </script>
+  <script nonce="a8b27127-5125-4adb-a370-7f5c7037407a">
+      window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
+  </script>
+  <script nonce="a8b27127-5125-4adb-a370-7f5c7037407a">
+      window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
+  </script>
 
 
  <!-- canva -->
@@ -265,7 +276,7 @@
                 <h1>Empowering your brand with creative marketing strategies</h1>
                 <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
                 <div class="text-center text-lg-start">
-                  <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                  <a href="#features" class="btn-get-started scrollto">Get Started</a>
                 </div>
               </div>
             </div>
@@ -303,7 +314,7 @@
                 <h1>Collaborative, talented professionals with a focus on your success</h1>
                 <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
                 <div class="text-center text-lg-start">
-                  <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                  <a href="#features" class="btn-get-started scrollto">Get Started</a>
                 </div>
               </div>
             </div>
@@ -341,7 +352,7 @@
                 <h1>Measurable results through data-driven marketing solutions</h1>
                 <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
                 <div class="text-center text-lg-start">
-                  <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                  <a href="#features" class="btn-get-started scrollto">Get Started</a>
                 </div>
               </div>
             </div>
@@ -379,7 +390,7 @@
                 <h1>Strategic marketing solutions tailored to your business needs</h1>
                 <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
                 <div class="text-center text-lg-start">
-                  <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                  <a href="#features" class="btn-get-started scrollto">Get Started</a>
                 </div>
               </div>
             </div>
@@ -420,7 +431,7 @@
                 <h1>Insight-driven marketing solutions for a competitive edge</h1>
                 <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->
                 <div class="text-center text-lg-start">
-                  <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                  <a href="#features" class="btn-get-started scrollto">Get Started</a>
                 </div>
               </div>
             </div>
@@ -548,87 +559,81 @@
 
 
     <div id="root">
-      <section id="zRTqC5YipHzfMXBM" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;position:relative;align-items:center;">
-          <div id="uzDwP1HyjAg9lQ6U" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
-              <div id="vudiT2lyomUCpmLe" style="z-index:0;">
-                  <div id="g4v8k9D49bvIGJhk" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
-                      <div id="yLz1KHj7w18COzwG" style="width:100%;opacity:1.0;height:100%;">
-                          <div id="heFo80oENAJeRta4" style="background-color:#ffffff;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
-                              <div id="OQiAULSrqQzQ1y1l" style="transform:rotate(0deg);top:-147.46451603%;left:-70.5075739%;width:170.5075739%;position:absolute;height:394.92903206%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/bf486c5b2b7000b4394f3901c59125c8.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+      <section id="hhkDxZzkZxPnrREo" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;position:relative;align-items:center;">
+          <div id="De9bYuLgQRswCQKU" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+              <div id="caGadPUxhHaPb6ss" style="z-index:0;">
+                  <div id="vfHA9y9x0wlGGfk0" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                      <div id="aLAS4QfJwshiqP7v" style="width:100%;opacity:1.0;height:100%;">
+                          <div id="vf4uosORfi13I1M0" style="background-color:#ffffff;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;">
+                              <div id="zkzsSS9nwThAPadK" style="transform:rotate(0deg);top:-147.46451603%;left:-70.5075739%;width:170.5075739%;position:absolute;height:394.92903206%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/bf486c5b2b7000b4394f3901c59125c8.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-          <div id="A5jb1xI3OUmMes4j" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
-              <div id="oODpt8GeoUDdBSfY">
-                  <div id="p5f16RZK2CrUuQSR" style="display:grid;position:relative;">
-                      <div id="jiX3AGWDtQp0GBRG" style="z-index:6;">
-                          <div id="V4Ac4ctDFskuJ1BB" style="padding-top:130.29315961%;transform:rotate(-16.82071246deg);">
-                              <div id="uGOxNdZlcqbK5KR5" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="eVQ1uAMBDtVfKykO" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="vwzg0v4YLG6xT8y9" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="w3z1tmSEWXNu0YCa" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/dc5c7326572e78f6afa70e15ba3640eb.png" alt="Hand Pressed Flora" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+          <div id="NP6TL7VmDWPLDCsL" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+              <div id="wJudmoWe7WGBYQZE">
+                  <div id="DWWOIJk1dpzjPQIP" style="display:grid;position:relative;">
+                      <div id="geeuYOpIq4NUUvfL" style="z-index:5;">
+                          <div id="s61JlT8qH7dmDohj" style="padding-top:130.29315961%;transform:rotate(-16.82071246deg);">
+                              <div id="le56M5B53EGK2Fly" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="gzBxOOfxe02JdfBF" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="OP3SoJGQq5yqXqa1" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="OAqeqfKDXdOudWQ2" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/dc5c7326572e78f6afa70e15ba3640eb.png" alt="Hand Pressed Flora" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="la3TyptjX3QPEXuE" style="z-index:7;">
-                          <div id="LgL3vgt963y1QlqO" style="padding-top:157.17092338%;transform:rotate(7.40206401deg);">
-                              <div id="WG9bdN1OjzHk16Wo" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="UIUCGiQonlgtxPTl" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="vgjaTvdW0XV0DTII" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="mdAPIZjKStENb65a" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/4e0a8b36500d0a12aa842c9eb2b3a8cc.png" alt="Hand Pressed Flora" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="qB7EoDvrHyV9Gxte" style="z-index:6;">
+                          <div id="kYB9PeGR2i7tFki0" style="padding-top:157.17092338%;transform:rotate(7.40206401deg);">
+                              <div id="ptWyjo9Lrigab3Bk" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="hU8qQp3RAOVRx291" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="KzefQF5Ox2odxTkm" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="UpsDKIQhjxDUEDkF" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/4e0a8b36500d0a12aa842c9eb2b3a8cc.png" alt="Hand Pressed Flora" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="KX4hTJeVYZ4sSKn3" style="display:grid;position:relative;grid-area:5 / 4 / 9 / 8;">
-                          <div id="zbO1nD83KohMkzYS" style="z-index:3;">
-                              <div id="CNOZvu10BxelClYi" style="padding-top:175.43859649%;transform:rotate(84.88740682deg);">
-                                  <div id="V1I8RYghHoiyHm3V" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                      <div id="ncLKqukZIVPkQANY" style="width:100%;opacity:1.0;height:100%;">
-                                          <div id="mfNgfJiXo2qPJGMO" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                              <div id="OTy5BjkX54fDRqbK" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/d669b8903cd4d3ebb0959e925ec6ea75.png" alt="White Paper" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="HxwcJmGWTXkF6ACm" style="display:grid;position:relative;grid-area:6 / 4 / 11 / 9;">
+                          <div id="j9McSDCwxoTCKB6U" style="z-index:3;">
+                              <div id="iOg0ulHlp28BO0D9" style="padding-top:175.43859649%;transform:rotate(84.88740682deg);">
+                                  <div id="dAbaO4PwP4ZcB6Et" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                      <div id="ve8PDsW92XZNuLZ9" style="width:100%;opacity:1.0;height:100%;">
+                                          <div id="iYA0fuglh3HX6WIh" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                              <div id="FQvjRh4ipryluu56" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/d669b8903cd4d3ebb0959e925ec6ea75.png" alt="White Paper" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                           </div>
-                          <div id="acYWIN8vhbjvefpz" style="z-index:8;">
-                              <div id="amL4nl032w6OgT86" style="padding-top:87.25490196%;transform:rotate(-5.11259318deg);">
-                                  <div id="mv1t9MAbRNmDeL5I" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                      <div id="DBZ7QPwOKu15DpTZ" style="width:100%;opacity:1.0;height:100%;">
-                                          <div id="iY1jE7U6lwdsY23x" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                              <div id="O9VmSbdwfs13oSfi" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/765eecd2278ca092f5a890f6326cb836.png" alt="Tape Strip" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                          <div id="BcIwvN74fNJ90yms" style="z-index:7;">
+                              <div id="BOuWs7qytgw473pQ" style="padding-top:87.25490196%;transform:rotate(-5.11259318deg);">
+                                  <div id="vctOgyqWuQJ3MKq1" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                      <div id="d7eUB1c1dJj1GGxg" style="width:100%;opacity:1.0;height:100%;">
+                                          <div id="RD8sdNdth3ZIALu5" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                              <div id="boKBEdcVpaLPEqXI" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/765eecd2278ca092f5a890f6326cb836.png" alt="Tape Strip" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                           </div>
-                          <div id="r17YlIdDgFcfkKQb" style="z-index:4;">
-                              <div id="AqXMJT2OjUprpN0c" style="transform:rotate(-4.9861564deg);width:100%;box-sizing:border-box;height:100%;">
-                                  <div id="nEgqvxuQKpe1iXob" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
-                                      <p id="psF6BT9ijOcuviBq" style="text-transform:none;color:#563913;letter-spacing:0.01em;font-family:YAEDY6vXgZk-0;line-height:0.89em;text-align:center;"><span id="QtzUVcpJ7KIg1JUt" style="color:#563913;">BS Group</span><br></p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div id="NKPDEnGxXy9XAwQU" style="z-index:5;">
-                              <div id="jeYVTRz6S25mb2KT" style="transform:rotate(-4.9861564deg);width:100%;box-sizing:border-box;height:100%;">
-                                  <div id="H9MnYgoew9IeM71h" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
-                                      <p id="u8J5zkmSnwH1Rb05" style="color:#563913;font-family:YADK4JHqBpg-0;line-height:1.3em;text-align:center;"><span id="IQ1ypwO9gVV2mIHW" style="color:#563913;">Moments of BS Group</span><br></p>
-                                  </div>
+                      </div>
+                      <div id="XFEgpGl6qgjOTy6X" style="z-index:4;">
+                          <div id="qo1Tze7AraMjnhn3" style="transform:rotate(-4.9861564deg);width:100%;box-sizing:border-box;height:100%;">
+                              <div id="nqJCinkta8Gs5o79" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                                  <p id="va7wToYChkdonjrX" style="color:#563913;white-space:pre;letter-spacing:0.01em;font-family:YAEDY6vXgZk-0;line-height:0.89em;text-align:center;"><br></p>
+                                  <p id="Knu5WTl0xftWm8jN" style="text-transform:none;color:#563913;letter-spacing:0.01em;font-family:YAEDY6vXgZk-0;line-height:0.89em;text-align:center;"><span id="n2GqA2IGHVs8wcXO" style="color:#563913;">Moments of BS Group</span><br></p>
                               </div>
                           </div>
                       </div>
-                      <div id="Id9Q478Yg8oI1bqh" style="z-index:2;">
-                          <div id="rKvXdHmze53g9W4s" style="padding-top:79.25%;transform:rotate(1.10775505deg);">
-                              <div id="kQYm6wlH0Uj4qJxA" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="SyRW7tlhotiEbxLv" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="iFA7w25UyOnnnnO6" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="HjtV3W5Kh4dnS6uU" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/23b9314b9876700d814287ed37739909.png" alt="Sticky Note Paper Background " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="X4y44bwCCG5CIrqt" style="z-index:2;">
+                          <div id="a6D0WHX5tabVKkiZ" style="padding-top:79.25%;transform:rotate(1.10775505deg);">
+                              <div id="eCql2jYrpQt32Ajc" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="vgXHaserUdpAlUDu" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="bpUrBBZqePj39gZY" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="VXq03VkrTuZI1tnm" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/23b9314b9876700d814287ed37739909.png" alt="Sticky Note Paper Background " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
@@ -636,39 +641,65 @@
                       </div>
                   </div>
               </div>
-              <div id="g8ZzOP5iH2R0SnBs" style="z-index:27;">
-                  <div id="YvI9lkpB68jSQtLG" style="padding-top:67.2%;transform:rotate(0deg);">
-                      <div id="X2qgv5qUriMoXcJU" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="EsDmdZX4sPom004Y" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FvJGN62wrO-0%3Ffeature%3Dshare&target=GmfX1NJElTy%2BJD%2BXJK76vVqnF3btQ4hxaoToLOXthZkESv2eLDBcEG4x8tonWh6SyQ6uYIEU84BH4VOzydg9fKLdC10iZTWKjNArVl1X%2Fskwti392CMxz7i3U7Q8i1IsQJpELyusaX7qvKE%3D&iv=TkX9jFdXVpD4RHXa"
+              <div id="YxN0NQtk7Vhk092l">
+                  <div id="ngOF7JwGABZrdxxp" style="display:grid;position:relative;">
+                      <div id="GyekJtoQCfRVWOjY" style="z-index:21;">
+                          <div id="VJJuc3xDaotKm74e" style="padding-top:83.10727051%;transform:rotate(-4.1478902deg);">
+                              <div id="ywUaTWb4qM15LA9k" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="QlOdNfeLMcLWEW7R" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="HUUuuwEt5oQUYb5L" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="aos6kmJPzNaRQGzh" style="transform:rotate(0deg);top:-10.2762259%;left:0%;width:100%;position:absolute;height:120.5524518%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e8f8009c95b76f82b2f55bc6f5bf86dd.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="OVF2rc4J7aVFXlJW" style="z-index:22;">
+                          <div id="Sbvd45sQWhqkYDka" style="padding-top:24.95833333%;transform:rotate(-6.76500044deg);">
+                              <div id="BXMEO31tnm6baHZX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="w89tg0KakOMG8azv" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="nQL824ZRRvhdUB5k" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="e7eCO3Fw7OpJeZLp" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/3ef1b83a73997d3da4c361ce2d884662.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="gnlAlnaqvOvXXMbn" style="z-index:29;">
+                  <div id="ab9z16Wti2VAfy48" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="ikXVlAeOEx8AqFah" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="AhFu2PCaTPsFHA5c" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FvJGN62wrO-0%3Ffeature%3Dshare&target=nGaCGMn3pzg5n2vVIfmml60ericZmpO1kMKuKqJdprSj2Bnr3v0u7ZQAGYTyAQiOjrWeMrdrSvlmJFOQG6oGlxgr7jDHfKNsMMmv5A7uiqYdWXx9%2FZEpgFcJBE3mqhg7sIAirveNoLo41rs%3D&iv=XR3%2BGTCsi%2FRATryM"
                               style="pointer-events:all;">
-                              <div id="PFNiGHFXM3i86bqL" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="IYsMqYDHPdMM6MIO" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="S27YLKuTHZ99mY4J" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/7cfbd18d3883e00126772567cd1b79bd.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="FTHqD7cP3GqHT7ao" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="giQyk7HF9DhoXVns" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="qLlqlf4YMdG109I0" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/62f55f36906eb20a7a0b19344af3279d.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="Y0IBLGoFaVppUks3">
-                  <div id="nxPh9ONn0yWQx7BD" style="display:grid;position:relative;">
-                      <div id="ak87TtUZYguROJiw" style="z-index:22;">
-                          <div id="vsgXs3AwbyEnklOj" style="padding-top:83.10727051%;transform:rotate(-4.1478902deg);">
-                              <div id="WFzfkTx3kFdRrujF" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="s7cXGJr6XHMjizvk" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="sjjJE5bfpjeZRNtr" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="N19DU8NZsHhjDPtU" style="transform:rotate(0deg);top:-10.2762259%;left:0%;width:100%;position:absolute;height:120.5524518%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e8f8009c95b76f82b2f55bc6f5bf86dd.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+              <div id="WJyTtSGr75ZAA5nw">
+                  <div id="Qga7Xt6iWRnxlIvd" style="display:grid;position:relative;">
+                      <div id="XXDcSv4NVT908A1c" style="z-index:15;">
+                          <div id="nKl70boLeA4OSVXC" style="padding-top:79.25%;transform:rotate(0deg);">
+                              <div id="YB80lRD9BhvyQa40" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="Lbna09pzG8G5KpgD" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="jZUJTYh26eSEZhB6" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="NGwFfMK8SbJjJIl6" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e3c300f7af1b69614e911899387cb36c.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="Ui0UABt40VeoG4Qa" style="z-index:23;">
-                          <div id="sJ6wkkk2UeBxKfPF" style="padding-top:24.95833333%;transform:rotate(-6.76500044deg);">
-                              <div id="OwFY3oYSzas7DCnp" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="ijvsiHNJQ25yI4zP" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="HMVJ4O66ONDCMWi7" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="rOMa1GYTLKBP02Q5" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/3ef1b83a73997d3da4c361ce2d884662.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="aGVcmpSniRMcLxTw" style="z-index:16;">
+                          <div id="kBtBbNUVAZZVf9eZ" style="padding-top:27.5%;transform:rotate(0deg);">
+                              <div id="ev8Co69YSbnbzpY2" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="POrcBOJxBLr3LSsZ" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="DqKmh2P1nkaKRzof" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="gvdOLGeWWwssf7D2" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/67af0e039d5d00d9d5d1d70a2fa8e4fe.png" alt="Paper sticky tape " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
@@ -676,39 +707,39 @@
                       </div>
                   </div>
               </div>
-              <div id="pTgvGR6qHWyUuTf0" style="z-index:28;">
-                  <div id="awxQ8xhSsK8tigdC" style="padding-top:64.39475264%;transform:rotate(0deg);">
-                      <div id="EhX9s1HC7MQ7UwDT" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="MpfUlRLSGftlZSpn" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutu.be%2FCMIG8-pk2dY&target=gwq4Mzz855ilu2kkedFOYNAQKFMquxQ3oBpuchrL1G8S2ZG9JOmL0%2FDDXx8YUIB4dXg05z82nbnhnySBwNgFR2xhsMDrn1TDuJ3Z%2FC2ebvzHb04%3D&iv=IaLf%2BW%2BDOmeAniGC"
+              <div id="rshGTxSeamwQFwDo" style="z-index:31;">
+                  <div id="tWlfj5JodielpJni" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="RE72ZEBipCzT1Zxc" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="gUUxtHXCvCfh4k8w" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FYSCHHuEfwAU%3Ffeature%3Dshare&target=wiaUg3dizwu10Kvt8QPMFMRRv4R0UpeaDdG9FFb%2BmGjLWcyUgylyzFOOmh6hE3FYQJnhgYKE0HGSdxMAMWcbPRW81m%2FhvOnF4wX%2BFxvtLt9GHSLz9CTyNXAqF%2BgNrXOr654DWJnlgJDe%2B%2B4%3D&iv=%2F5%2BesyAOe9o8I3IK"
                               style="pointer-events:all;">
-                              <div id="fnLY2KF77EKggK08" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="YIizvthVBP2IMG9R" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="O8DFgIBb5KoXSf7e" style="transform:rotate(0deg);top:0%;left:0%;width:101.54557147%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/1d927ec841ddacf41976ba4863748a5d.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="vuZGFeyNcsSLGOHA" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="M64wiPiPNaaK4ZlH" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="OLcOWG13X3b21pWG" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/9024c582413fa24bc9110e25a4d15543.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="ZISDfPMeQxlMfx7q">
-                  <div id="XFZrznHMhIQP8nsN" style="display:grid;position:relative;">
-                      <div id="FCwc6ECrQ66mQSxD" style="z-index:10;">
-                          <div id="g44CDvUBTIBsyZb8" style="padding-top:84.91666667%;transform:rotate(2.38784682deg);">
-                              <div id="tQOfR4rT4xvsrGzj" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="u5NAkgqRaxn9Rqav" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="fmTcEGL8DPq0DHDD" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="khRVdbHqxMtnRA5S" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/a8cb8e153460980686782707f923982d.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+              <div id="N1IWkzMOwFB35c3L">
+                  <div id="ibN38k8jHHlH4sjN" style="display:grid;position:relative;">
+                      <div id="fsZD3WO8riFGmh7V" style="z-index:9;">
+                          <div id="KPfytH9pwNqMj8mT" style="padding-top:84.91666667%;transform:rotate(2.38784682deg);">
+                              <div id="P7gyaEuB3OmqoPhG" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="XL2I9uVIw68PakPs" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="PMurFFWK5258yXFl" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="RsEvoDzoIQwlq6Xi" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/a8cb8e153460980686782707f923982d.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="pQHfYjtg2EN2kqyg" style="z-index:11;">
-                          <div id="DLX5nw0GXfOuX9AP" style="padding-top:33.95833333%;transform:rotate(0deg);">
-                              <div id="m1cbiamJn2lnzdDo" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="lsjfiATLJ2zYYQMB" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="ONPfPMNBwlKi1G2n" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="FdQknYo40ccYHBI7" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/94d36c7394f4a5697fb9152f7852b196.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="FOYJQI9amNUPhwui" style="z-index:10;">
+                          <div id="V1Muw0nIdSUbvP1D" style="padding-top:33.95833333%;transform:rotate(0deg);">
+                              <div id="exEsXYY04PqMX6GH" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="d33s6U7qhpRDYVLn" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="FA4TOa3I3apPyvYf" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="xLIoZaZS8suzjbOH" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/94d36c7394f4a5697fb9152f7852b196.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
@@ -716,65 +747,39 @@
                       </div>
                   </div>
               </div>
-              <div id="C1ku7bfq6PSV419J" style="z-index:29;">
-                  <div id="lCrYYnTOROSyLzoF" style="padding-top:65.49749341%;transform:rotate(0deg);">
-                      <div id="qXc3hQTaN1HOzLuO" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="fodRwdZsfR2SvAbL" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FYSCHHuEfwAU%3Ffeature%3Dshare&target=wepxMvIhluhX%2B8rovxIvQIjALKYCznigoB0a2og12zTfIdShKvProibPNwEzZ7NuDATD7ZhfiJNKAAQmNVjQS8qKgd%2FY4%2BwljWM7BJmg7L4Dq7koZhg815skAy88p14I89csPTwTui3ubCY%3D&iv=95tvGgFYaZnspyoB"
+              <div id="xIpXnVJHD1vBUS8h" style="z-index:30;">
+                  <div id="Dbk1vIq17pr6TAzo" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="g3vq8J0SF0tzL2ym" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="bGMxPwgIYw3Xi1zQ" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutu.be%2FCMIG8-pk2dY&target=50Op9y439ZL4pIGRWqTIVPe4SA8Bvmn%2B%2F0BfqtMqBfOlXsMkTdHeT4WdA%2Fmtc%2Br%2BcgP3Qo8J6mEvogxGIDa3n4gW4m6y6a32KwamqJDQe4qLg00%3D&iv=sm8SBftGAk7RjFn2"
                               style="pointer-events:all;">
-                              <div id="xUyUTRWesOb3z51D" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="EPgBYNmK596XLCZ2" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="TyntRPVhhC0PtPHB" style="transform:rotate(0deg);top:-35.37890284%;left:-0.1998827%;width:100.39976541%;position:absolute;height:158.29484355%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/3b3ec62266c1006f998c63292448ad55.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="JvzbbznJBORDufI5" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="Qvl19R3lYMYOJLW3" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="tkBQQvSKZUdJdYjQ" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/4bc2795d79c2958a4d0c98364d55012b.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="nGK3l2DEvZks56CB">
-                  <div id="m7d6dAmIXjmzWgRT" style="display:grid;position:relative;">
-                      <div id="IOJOr97YGZsYPj9M" style="z-index:16;">
-                          <div id="o89y6Wo9QGH33IvW" style="padding-top:79.25%;transform:rotate(0deg);">
-                              <div id="ikz5p3TRwGiAV9Dq" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="MqGQY5xi9Qkjy4rT" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="MnUbMPtY5PLFMfwo" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="llQM4TlkcbPP5gUi" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e3c300f7af1b69614e911899387cb36c.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+              <div id="y30HxP97uqXgvnFT">
+                  <div id="qHX8kmHcw4htFjcJ" style="display:grid;position:relative;">
+                      <div id="hf5C6zK0AYuuH7PX" style="z-index:24;">
+                          <div id="zl4YdTVAbDcf0yWJ" style="padding-top:83.10727051%;transform:rotate(3.47146585deg);">
+                              <div id="jRJxISrUvJy6x5FT" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="Dcrt0g1iAQnLhLwx" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="QEUwLubpeYvteYls" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="cWXGdHy2NJiemsyE" style="transform:rotate(0deg);top:-10.2762259%;left:0%;width:100%;position:absolute;height:120.5524518%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e8f8009c95b76f82b2f55bc6f5bf86dd.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="ZiT32UTUNaNulqel" style="z-index:17;">
-                          <div id="sQ9U6bfu0ULYgl4S" style="padding-top:27.5%;transform:rotate(0deg);">
-                              <div id="YftMuRdv7vehFX4c" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="mjGpCVMPHthuh5w9" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="QC8vssFFXrdiQAuk" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="XLQr18L7WmnAvYeg" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/67af0e039d5d00d9d5d1d70a2fa8e4fe.png" alt="Paper sticky tape " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div id="SZl0pOzSQh5lNDT6">
-                  <div id="V5V1qKgYDqhAQeNT" style="display:grid;position:relative;">
-                      <div id="aQD77WcRcnI7nQW5" style="z-index:25;">
-                          <div id="i0hFqX75qlzPmKeP" style="padding-top:83.10727051%;transform:rotate(3.47146585deg);">
-                              <div id="d7nH2nbyJj8OPchx" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="XvWbNmLVp8B9ZWdK" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="utpr4stQl6MKf56q" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="JnTzu0m1eW57Wu2I" style="transform:rotate(0deg);top:-10.2762259%;left:0%;width:100%;position:absolute;height:120.5524518%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e8f8009c95b76f82b2f55bc6f5bf86dd.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div id="oAc2Vr9wlHWWHFko" style="z-index:26;">
-                          <div id="OaHVGrJC1DjpXoLA" style="padding-top:24.95833333%;transform:rotate(-175.801065deg);">
-                              <div id="qNqxF39y3yWDOjJB" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="IyHw9u3Pbk1FMLiC" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="seL96Od9os0y0c9X" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="LJKgwxjFiyaeDgmH" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/3ef1b83a73997d3da4c361ce2d884662.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="jhV6lIOwBrZGVjcl" style="z-index:25;">
+                          <div id="wX0QTijKGJ2YBwOo" style="padding-top:24.95833333%;transform:rotate(-175.801065deg);">
+                              <div id="y7Zk1zkcF3bPy2xX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="kTS6c2WXov8WJS0F" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="saSdtRrkflGkInRV" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="FSYQb3hMSdMjVdyF" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/3ef1b83a73997d3da4c361ce2d884662.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
@@ -782,53 +787,53 @@
                       </div>
                   </div>
               </div>
-              <div id="hnoJrezmF8895OOZ" style="z-index:30;">
-                  <div id="Hg3L5MRJztrUYBhm" style="padding-top:62.27365287%;transform:rotate(0deg);">
-                      <div id="GYMZfuZ2aroNvs5d" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="bSrhf3ERsAR7ckma" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FCXvXMRAno_E%3Ffeature%3Dshare&target=96K4Znt3z2JkVGvhdMYKB0ZS1qK6uBnLZzra9JVr%2F1Tyuv1QONQ75YONeAi%2BBOM8CMlNW7%2FpuYPfhns7CgMt7HNN9YPAVtbGdGxTw%2B%2FLWcVBuKs8mWqU7iMfzEbp7TL9Rc3LomwXIDkDI8c%3D&iv=0KhmwLsoph309cnN"
+              <div id="iifrsWLPvHncaxiD" style="z-index:32;">
+                  <div id="TW7Zr2H5ryBxkCIy" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="q4ZOpehVQOZdgyCf" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="xzZ8JViP7cbkdL1k" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutu.be%2FSBtsdht6rqk&target=OQ6JjkIvjvF9WglrcYl4te2TDcyBz5S5D7x8jvitzBmsJcaxtSRxHdB%2FvWPQnSA9N8MWLErBWCrfsUWI9crpADDF0JyYuvOhK3mEx%2B36aydU%2BzI%3D&iv=vNnR0%2FNXTHPgpHr5"
                               style="pointer-events:all;">
-                              <div id="MmqRqaBO753ibDXj" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="o1SseI9rEl6abggi" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="zoCx1e9qijH1pipt" style="transform:rotate(0deg);top:-88.70510517%;left:-10.43443188%;width:110.43443188%;position:absolute;height:188.70510517%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/98a4dc6dace60988bf2e72c1678ab95c.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="afjbsiNVhpMvgPRb" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="FeCRS5YV2Xc7fAp0" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="ERPUluvvtI32bjnS" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/00265baf78f166c9274493f353844848.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="ockMGLrgrNNOVNJI" style="z-index:31;">
-                  <div id="Bl4OnMH6IoYnAHSs" style="padding-top:73.70777744%;transform:rotate(0deg);">
-                      <div id="S3lOOjmaULffExMU" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="iMnEKNs8DsG8Rwx1" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FDIRH7VA-t7k%3Ffeature%3Dshare&target=9rzidA%2FQSMUaF9QwJvVNNMQ%2BQz2Wslv3Np4jSG7udFlccZc2GpYpu%2BVlPS%2FeNaXIvE%2Bs1T70V5I97lfx%2FL%2FP6%2BpD9%2BNGK1UsTdSwwlp2859Dzf7BzRPzpFHVS3QBS%2BbqNyVbAywAYpcWCnk%3D&iv=F42GdGjD5AZaaIFu"
+              <div id="v8XrkjUPVWcf9yo4" style="z-index:33;">
+                  <div id="lkmyipy6Yb8YmNGX" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="Pw9iKs4j81mlVyFS" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="fLIInnf2L0kcduFg" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FDIRH7VA-t7k%3Ffeature%3Dsharehttps%253A%252F%252Fyoutube.com%252Fshorts%252FDIRH7VA-t7k%253Ffeature%253Dshare&target=hr002OEVHhkiCKuk3tG5jLNwqcOWyEA1kiwH6%2BzLNJh7JcWUXcPqvUCnnTBOIkde8CP5Tk4o%2FufCGwLeQDvRj1G6qTd%2FgF6tGjbn%2FaPc4llsZIUOLEQLJsjF%2FYjHhB4YXGz4YB2OZMLqXANpKvlGmJcXKCQMVxBUEayuJSMUqUna%2BUzYn5rfLBARnnhElF17sFOUY%2B5dgwUTt9jLiHzOU8MEpxoBxg6c4B9Fi%2Fs%3D&iv=3ughX5qj6v%2BloTQp"
                               style="pointer-events:all;">
-                              <div id="DLE00GGmtmHwgjQU" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="ecsuCZmCCzRqrP11" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="PBlJEWAZBJA66MIM" style="transform:rotate(0deg);top:-10.9059192%;left:0%;width:100%;position:absolute;height:140.65879367%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/09ac61c76234ac0bb666e7950bcadd93.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="qKldAJZa3rUHQ5mv" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="htZ2zi5VOZoxS0Ys" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="bWjRecGKpmVKLBKs" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/77f5439e709437ff9a75dafbb10020c8.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="NqsLuSrnN61YAH6e">
-                  <div id="bh4z5FhZOFgwmcu2" style="display:grid;position:relative;">
-                      <div id="QwnEPpwSn6412yv0" style="z-index:13;">
-                          <div id="TXYHnDFNQCQSRKxG" style="padding-top:84.91666667%;transform:rotate(-2.71035712deg);">
-                              <div id="WZbZxFUUMvzBzMql" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="T1XHdpfaWabI3fbe" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="hHUjDSJqWu8PcDgu" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="uBtH6qdVx6Z0kc7b" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/a8cb8e153460980686782707f923982d.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+              <div id="ZRApySRWRAfskxt1">
+                  <div id="nuQpFaE8Rl68iXSd" style="display:grid;position:relative;">
+                      <div id="Kl295TnhhSpLs5EI" style="z-index:27;">
+                          <div id="e9u0juxEHeehC6se" style="padding-top:84.91666667%;transform:rotate(-2.71035712deg);">
+                              <div id="U1HeiyKRrk5UBhNL" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="qADGUCirQQwk3OGZ" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="BJoktej5ogbELIL8" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="TBTqmVCp6VRDNcUm" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/a8cb8e153460980686782707f923982d.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="waQ6cVPEUPFEYB6e" style="z-index:14;">
-                          <div id="UxRneBZzQa7JuJ7n" style="padding-top:33.95833333%;transform:rotate(176.90102055deg);">
-                              <div id="zdx2gYsg8jrvfZPJ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="k6OVQedr5eGn6yu5" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="zra5tCk3ZhpSzh5X" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="UsAX8mcpnWTcBr4j" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/94d36c7394f4a5697fb9152f7852b196.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                      <div id="qLPuCecAqiHxNG8K" style="z-index:28;">
+                          <div id="wfpfYpwG3LN14d0v" style="padding-top:33.95833333%;transform:rotate(176.90102055deg);">
+                              <div id="RHqVXuPc2BbUBwnG" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="hhQzsTMECWmffy6R" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="aEBn4ZoROLdS4nDU" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="S79r4MaW2PRskPMA" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/94d36c7394f4a5697fb9152f7852b196.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
@@ -836,39 +841,79 @@
                       </div>
                   </div>
               </div>
-              <div id="Vl9YBEF64kfXb4SP" style="z-index:32;">
-                  <div id="pRtQnXWMyeH89WOG" style="padding-top:62.53397402%;transform:rotate(0deg);">
-                      <div id="b4rChccIbOMtXaE4" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                          <a id="pXEcSU6nU5Wfz042" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutu.be%2FHTa6FyX7DZY&target=%2BpqgE2moPIyvVHkpKwjQPgsFeM%2Bztn6ndmZRo3n4tfh7yfLpOwPnVGjUi%2BEVvgXU0RctlIvIarxQ7axlL7wz7Z3tqHR7mSM67ZlJcP6dgicYhkA%3D&iv=Anedju6ID4tzJ7m3"
+              <div id="OqEq84D92XZxAPsk" style="z-index:34;">
+                  <div id="gpURDoII51PjGz03" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="Bea0QveTyhhgTacQ" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="BUH3XwYh4Jw5auvs" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutu.be%2FHTa6FyX7DZY&target=swYMWUCy5cYLsDWM%2F59wrwh7cFpjJn2Ls%2BFFUe4EeYU0sMvjYTv5IgImGFWyTfG%2FusYbzHzJ6M10YwdPGXK9qpJi8eyuJNSEgaRqR0FKAHqDc%2Fc%3D&iv=BQydqCeco1xt2YQa"
                               style="pointer-events:all;">
-                              <div id="L21W2PvzyupnzAlB" style="width:100%;opacity:1.0;height:100%;">
-                                  <div id="ea7Ak5UDxQTGwiKQ" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                      <div id="pzLuau1LURwBbWe4" style="transform:rotate(0deg);top:-16.01345264%;left:-8.22786606%;width:111.3511562%;position:absolute;height:227.58610778%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/867e92b13a02436cac49ba60ac34a3bb.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                              <div id="D83gWsDFbeGh2BxF" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="CkhQNsG4War58N0b" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="Ddmj8IepcY4cjn5g" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/cdd487d26e71e3883e210f02e4de32ba.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                   </div>
                               </div>
                           </a>
                       </div>
                   </div>
               </div>
-              <div id="v2IkCjB4pGxZSBZe">
-                  <div id="vVmWXKlCuGtxHRFL" style="display:grid;position:relative;">
-                      <div id="mMvXw14514P4GzKt" style="z-index:19;">
-                          <div id="adP5M3uJmlQa1TYK" style="padding-top:79.25%;transform:rotate(0deg);">
-                              <div id="NT7PkogDBRbpGcTP" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="JVwo3Uq1A2gTRFFP" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="PyJIwobBixCrnLRS" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="aC3GoZxpDdoJdN9s" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e3c300f7af1b69614e911899387cb36c.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+              <div id="KxJaYza8r9OBZcLy">
+                  <div id="NEBLet2Pq7tCEIZL" style="display:grid;position:relative;">
+                      <div id="L0PPH998ZRXt7o3g" style="z-index:12;">
+                          <div id="OmFvCcGEPPQV7dc4" style="padding-top:84.91666667%;transform:rotate(-2.71035712deg);">
+                              <div id="mDMJMIEozknnFr5V" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="ebHPwqY0UL5PO2dl" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="yMo29DzEWgEXPOxe" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="jLVAcaIH3KWppLNX" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/a8cb8e153460980686782707f923982d.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <div id="MMgghaGTXbRWT6eU" style="z-index:20;">
-                          <div id="sStdrNHHG2pNM4oh" style="padding-top:27.5%;transform:rotate(0deg);">
-                              <div id="L7IplEPaP3JIV5q0" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
-                                  <div id="KNyRyNmLrtakVwTi" style="width:100%;opacity:1.0;height:100%;">
-                                      <div id="cx7NMJXggt7KDj3R" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
-                                          <div id="MLOVLkigKNuGtIUI" class="scale_rotated_fill" data-container-width="116.29906556" data-container-height="31.98224303" data-imagebox-width="116.29906556" data-imagebox-height="31.98224303" data-imagebox-top="0"
+                      <div id="VeaNYyz4k9i1vVdf" style="z-index:13;">
+                          <div id="C2rZK5CmTRIvo8IZ" style="padding-top:33.95833333%;transform:rotate(176.90102055deg);">
+                              <div id="mgXGaWr1QMmZFOk8" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="utR6nsiVyrhRviy8" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="aC3EB74tT8STHSXX" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="yYW37XbFpbQdBsut" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/94d36c7394f4a5697fb9152f7852b196.png" alt="Paper sticky tape" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="v5eqvj6KngpUziWH" style="z-index:35;">
+                  <div id="dW4f2wCzUTNdwxdZ" style="padding-top:62.5%;transform:rotate(0deg);">
+                      <div id="eLofPdCRDqevlt99" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                          <a id="N2BLPzkb422pgOM4" target="_blank" rel="noopener" href="/_link/?link=https%3A%2F%2Fyoutube.com%2Fshorts%2FCXvXMRAno_E%3Ffeature%3Dshare&target=QU9rXfAb4wCGqK9o33m86sO6zmYNoqCYn1ts3q0urtg%2B9u2O%2Fat33EjxSR6W1w0VMj3dCHvVMC5Vg304YSOJM3JK%2FKEKYg8RNN5RqMGVbmD5ViR9gDHMvxafM1ZJXVW53amwUIOkpw3qAiI%3D&iv=JPoPpu8PEiIh5x9Q"
+                              style="pointer-events:all;">
+                              <div id="umqVEo3uOZk1SkNl" style="width:100%;opacity:1.0;height:100%;">
+                                  <div id="yr42gbRIOaLw4E5Q" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                      <div id="C3iDPs7RHJIXdFfZ" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/6f33d9ffcff680ebd6b0887899a1938a.png" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div id="qOg49JpDSMxsoS3j">
+                  <div id="xTv27iuKyvw6DwAi" style="display:grid;position:relative;">
+                      <div id="aWEJ3cAhk7dccYM7" style="z-index:18;">
+                          <div id="u1kfv9fG4ZKQGVGO" style="padding-top:79.25%;transform:rotate(0deg);">
+                              <div id="Be0YhPqyZhjuntco" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="FrWVLUzX4rhz4LrY" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="tmvArlZF4gWKBChj" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="ARscenOCnhf0JAHc" style="transform:rotate(0deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/e3c300f7af1b69614e911899387cb36c.png" alt="Paper Texture " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="zJDO2gIqH1KFG8dj" style="z-index:19;">
+                          <div id="Ve5rkXI10ANqdbpP" style="padding-top:27.5%;transform:rotate(0deg);">
+                              <div id="yhGBDlz2RX9lGIt3" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                                  <div id="Oz4vs3JqAAxwZAaO" style="width:100%;opacity:1.0;height:100%;">
+                                      <div id="qeBXnAu7mo0MG8Yf" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                          <div id="V3V7K6HHCQVLl4kL" class="scale_rotated_fill" data-container-width="116.29906556" data-container-height="31.98224303" data-imagebox-width="116.29906556" data-imagebox-height="31.98224303" data-imagebox-top="0"
                                               data-imagebox-left="0" data-imagebox-rotation="-180" style="transform:rotate(-180deg);top:0%;left:0%;width:100%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/67af0e039d5d00d9d5d1d70a2fa8e4fe.png" alt="Paper sticky tape " loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
                                       </div>
                                   </div>
@@ -879,8 +924,8 @@
               </div>
           </div>
       </section>
-      <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async="" nonce="618a19ee-01f4-4f4c-a95a-72898ca37d39"></script>
-      <script src="js/aa9e3b8f2ab80dd8d1ea56debe4638a8008674aa985899320321c67eb7d42586.js" async="" nonce="618a19ee-01f4-4f4c-a95a-72898ca37d39"></script>
+      <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async="" nonce="a8b27127-5125-4adb-a370-7f5c7037407a"></script>
+      <script src="js/aa9e3b8f2ab80dd8d1ea56debe4638a8008674aa985899320321c67eb7d42586.js" async="" nonce="a8b27127-5125-4adb-a370-7f5c7037407a"></script>
   </div>
 
     <!-- ======= Features Section ======= -->
@@ -974,7 +1019,7 @@
                   trigger="hover"
                   style="width:32px;height:32px">
               </lord-icon> -->
-              <h3><a href="best-seo-company-pune.html"><img class="image1" src="assets/img/images/seo.png" alt="">Search Engine Optimization</a></h3>
+              <h3><a href="best-seo-company-pune.html"><img class="image1" src="assets/img/images/seo.png" alt="">Search Engine (SEO)</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
@@ -1270,7 +1315,7 @@
     <!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -1288,9 +1333,10 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
@@ -1302,9 +1348,10 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
@@ -1316,9 +1363,10 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
@@ -1330,9 +1378,10 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
@@ -1344,14 +1393,16 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -1364,10 +1415,10 @@
 		<div class="parent_team_flex">
 			<div class="chlid_flex" id="child_flexx">
 				<div class="pic" data-aos="zoom-in" data-aos-delay="100"><img src="assets13/images/IMG_9919 copy.jpg" class="img-fluid" alt=""></div>
-				<div class="member-info">
+				<!-- <div class="member-info">
 					<h4>Bhavesh Singla</h4>
 					<span>Founder & CEO</span>
-				</div>
+				</div> -->
 			</div>
 			<div class="team_text_flex">
 				<p>Meet <strong> Bhavesh Singla</strong>, an accomplished entrepreneur and CEO of BS Group, a leading brand management and digital marketing company. Bhavesh graduated from Symbiosis College of Arts and Commerce with a BCom in Marketing specialisation and went on to complete his MBA in Marketing specialisation from Narsee Monjee Institute of Management Studies. <br>
@@ -1881,8 +1932,111 @@ sliderButtons.forEach(button => {
             window.dispatchEvent(new Event('resize'));
         });
     });
+</script> -->
+
+
+<script nonce="a8b27127-5125-4adb-a370-7f5c7037407a">
+  const lang = navigator.language ? navigator.language : 'en';
+  fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+      response.text().then(footerStr => {
+          const div = document.createElement('div');
+          div.innerHTML = footerStr;
+          for (const child of [...div.children]) {
+              if (child.tagName.toLowerCase() !== 'script') {
+                  document.body.append(child);
+              }
+          }
+
+          (() => {
+              ! function() {
+                  "use strict";
+                  const e = document.getElementById("modal_backdrop"),
+                      t = document.getElementById("report_form"),
+                      o = document.getElementById("report_button"),
+                      n = document.getElementById("form_report"),
+                      c = document.getElementById("form_cancel"),
+                      s = document.getElementById("form_submit_reason"),
+                      a = document.getElementById("form_go_back"),
+                      d = document.getElementById("form_submit_captcha"),
+                      l = document.getElementById("form_close"),
+                      i = document.getElementById("report_reason_0"),
+                      r = document.getElementById("error_message"),
+                      m = document.getElementById("error_message_captcha"),
+                      u = [document.getElementById("form_step_terms"), document.getElementById("form_step_report_reason"), document.getElementById("form_step_captcha"), document.getElementById("form_step_success")];
+
+                  function p() {
+                      e.classList.remove("active"), t.classList.remove("active"), o.classList.remove("active"), o.focus()
+                  }
+
+                  function E(e) {
+                      u.forEach(((t, o) => {
+                          t.style.display = o === e ? "block" : "none"
+                      }))
+                  }
+                  let _, y = !1;
+                  const f = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => _ : () => {
+                      const e = t.elements.namedItem("g-recaptcha-response");
+                      return null == e ? void 0 : e.value
+                  };
+                  e.onclick = p, c.onclick = p, l.onclick = p, o.onclick = function() {
+                      u.forEach(((e, t) => {
+                          e.style.display = 0 === t ? "block" : "none"
+                      })), e.classList.add("active"), t.classList.add("active"), o.classList.add("active"), i.checked = !0, setTimeout((() => {
+                          i.focus()
+                      }), 350)
+                  }, n.onclick = () => E(1), s.onclick = () => {
+                      E(2),
+                          function() {
+                              if (y) return;
+                              const e = document.createElement("script");
+                              console.log("our window captcha: ", window.C_CAPTCHA_IMPLEMENTATION, window.C_CAPTCHA_KEY), e.src = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? "https://cstaticdun.126.net/load.min.js" : "https://www.google.com/recaptcha/api.js", e.async = !0, e.defer = !0, document.head.appendChild(e), y = !0, e.onload = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => {
+                                  var e;
+                                  null === (e = window.initNECaptcha) || void 0 === e || e.call(window, {
+                                      captchaId: window.C_CAPTCHA_KEY,
+                                      element: "#netease-captcha",
+                                      protocol: "https",
+                                      width: "auto",
+                                      onVerify: (e, t) => {
+                                          _ = t.validate
+                                      }
+                                  })
+                              } : () => {}
+                          }()
+                  }, a.onclick = () => E(1), t.addEventListener("submit", (function(e) {
+                      e.preventDefault(), r.style.display = "none", m.style.display = "none";
+                      const t = function() {
+                              let e = "";
+                              const t = document.getElementsByName("report_reason");
+                              for (let o = 0; o < t.length; o++) {
+                                  const n = t[o];
+                                  !0 === n.checked && (e = n.value)
+                              }
+                              return e
+                          }(),
+                          o = f();
+                      if (!o) return void(m.style.display = "block");
+                      const n = {
+                              reason: t,
+                              challenge: o
+                          },
+                          c = window.location.origin + window.location.pathname + "/_api/report";
+                      d.classList.add("loading"), fetch(c, {
+                          method: "POST",
+                          body: JSON.stringify(n),
+                          headers: {
+                              "Content-Type": "application/json; charset=utf-8"
+                          }
+                      }).then((e => {
+                          d.classList.remove("loading"), e.ok ? E(3) : r.style.display = "block"
+                      }))
+                  }))
+              }();
+          })();
+          window.dispatchEvent(new Event('resize'));
+      });
+  });
 </script>
-   -->
+  
 
 </body>
 

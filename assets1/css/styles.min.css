@@ -844,6 +844,10 @@ h3.title .textdark {
     color: #3d3d3d !important
 }
 
+.copyright{
+    color: white;
+}
+
 .btn.focus,
 .btn:focus {
     outline: 0 !important;
@@ -5580,9 +5584,9 @@ margin-left: 20px;
   
   #footer .footer-top .footer-info {
     margin-bottom: 15px;
-    background: #010246;
+    background: #000;
     color: #fff;
-    border-top: 4px solid #1acc8d;
+    border-top: 4px solid #0090f8;
     text-align: center;
     padding: 30px 20px;
   }

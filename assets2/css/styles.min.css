@@ -810,6 +810,9 @@ h3.title .textdark {
 .acad_box:hover .readbtn {
     color: #fff !important
 }
+.copyright{
+    color: white;
+}
 
 .footer-1 {
     background: #f0f0f0 0 0 no-repeat padding-box
@@ -5571,12 +5574,11 @@ margin-left: 20px;
   #footer .footer-top {
     padding: 60px 0 30px 0;
   }
-  
   #footer .footer-top .footer-info {
     margin-bottom: 15px;
-    background: #010246;
+    background: #000;
     color: #fff;
-    border-top: 4px solid #1acc8d;
+    border-top: 4px solid #0090f8;
     text-align: center;
     padding: 30px 20px;
   }
