@@ -5864,6 +5864,8 @@ h1.title {
 
 
     /* footer */
+
+
     #footer {
         background: #000;
         padding: 0 0 30px 0;
@@ -5914,7 +5916,7 @@ h1.title {
       }
       
       #footer .footer-top .social-links a:hover {
-        background: #1acc8d;
+        background: #0090f8;
         color: #fff;
         text-decoration: none;
       }
@@ -5939,7 +5941,7 @@ h1.title {
       
       #footer .footer-top .footer-links ul i {
         padding-right: 2px;
-        color: #61ebba;
+        color: #0090f8;
         font-size: 18px;
         line-height: 1;
       }
@@ -5962,7 +5964,7 @@ h1.title {
       }
       
       #footer .footer-top .footer-links ul a:hover {
-        color: #4be8b0;
+        color: #0090f8;
       }
       
       #footer .footer-top .footer-newsletter form {
@@ -5988,18 +5990,18 @@ h1.title {
         background: none;
         font-size: 16px;
         padding: 0 20px;
-        background: #1acc8d;
+        background: #0090f8;
         color: #fff;
         transition: 0.3s;
         border-radius: 50px;
       }
       
       #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-        background: #149f6e;
+        background: #0090f8;
       }
       
       #footer .copyright {
-        border-top: 1px solid #010479;
+        border-top: 1px solid #0090f8;
         text-align: center;
         padding-top: 30px;
       }
@@ -6016,7 +6018,7 @@ h1.title {
           margin: -20px 0 30px 0;
         }
       }
-
+    
       .col-md-5 img{
         position: relative;
         top: 200px;
