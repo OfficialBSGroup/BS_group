@@ -1914,3 +1914,78 @@ color: #0090f8;
 
 /* second page  */
 
+
+/* #inside{
+  height: 500px;
+} */
+.yt-slide {
+  /* padding: 0px 100px; */
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.popOverPlayer {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  object-fit: cover;
+}
+
+
+/* .yt-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.yt-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 16:9 aspect ratio
+}
+
+.yt-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.yt-slide iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yt-slider .prev, .yt-slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.yt-slider .prev {
+  left: 1rem;
+}
+
+.yt-slider .next {
+  right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .yt-slider .prev, .yt-slider .next {
+    font-size: 2rem;
+  }
+} */
