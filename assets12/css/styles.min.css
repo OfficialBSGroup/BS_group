@@ -5753,8 +5753,14 @@ h1.title {
         color: #0090f8!important;
     }
 
-    .image1 img{
-        
+    .navbar i{
+        display: none;
+    }
+    @media (max-width:990px){
+        .navbar i{
+            display: block;
+        }
+    
     }
 
     

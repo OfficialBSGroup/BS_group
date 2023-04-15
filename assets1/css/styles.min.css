@@ -5569,6 +5569,20 @@ margin-left: 20px;
     margin-right: 50px;
 }
 
+.navbar i{
+    display: none;
+}
+@media (max-width:990px){
+    .navbar i{
+        display: block;
+    }
+
+}
+
+
+
+
+
 
 /*------------ footer----------- */
 #footer {
