@@ -804,6 +804,15 @@ section {
   color: #010483;
 }
 
+
+@media (max-height:700px) {
+  .mySlides{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1077,6 +1086,9 @@ section {
 .section-title p{
   color: #0090f5;
 }
+.section-title{
+  margin: 0px 40px;
+}
 
 .features .icon-box i {
   font-size: 32px;
@@ -1110,6 +1122,21 @@ section {
   width: 40px;
   margin-right: 10px;
 }
+.container4{
+  padding: 0px 40px;
+}
+
+
+@media (min-width:300) and (max-width:1000){
+  .features .icon-box{
+    flex-direction: column;
+  }
+  .section-title{
+    margin: 0px 40px;
+  }
+  
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1172,6 +1199,16 @@ section {
   width: 500px;
   margin-top: 40px;
  
+}
+
+.container5{
+  padding: 0px 50px;
+}
+@media  (max-width:800px) {
+  .sect{
+    display: none;
+  }
+  
 }
 /*--------------------------------------------------------------
 # Details
@@ -1612,7 +1649,7 @@ section {
   }
 }
 .container2{
-  padding: 20px 100px;
+  padding: 0px 30px;
 }
 
 /*--------------------------------------------------------------
@@ -1737,6 +1774,11 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
+.container6{
+  padding: 0px 40px;
+}
+
+
 
 .contact .php-email-form button[type=submit]:hover {
   background: #0090f8;
@@ -1760,9 +1802,6 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
-  height: auto;
-  overflow: hidden;
-
 }
 
 #footer .footer-top {
@@ -1773,7 +1812,7 @@ section {
   margin-bottom: 15px;
   background: #000;
   color: #fff;
-  border-top: 4px solid#0090f8;
+  border-top: 4px solid #0090f8;
   text-align: center;
   padding: 30px 20px;
 }
@@ -1808,7 +1847,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background:#0090f8;
+  background: #0090f8;
   color: #fff;
   text-decoration: none;
 }
@@ -1882,7 +1921,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background:#0090f8;
+  background: #0090f8;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1893,7 +1932,7 @@ section {
 }
 
 #footer .copyright {
-  border-top: 1px solid #010479;
+  border-top: 1px solid #0090f8;
   text-align: center;
   padding-top: 30px;
 }
@@ -1910,11 +1949,26 @@ section {
     margin: -20px 0 30px 0;
   }
 }
-
-
-.footer-links a:hover{
-color: #0090f8;
+footer a {
+  color: #fff !important
 }
+
+footer .list-unstyled li a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 2px 0;
+  font-size: 13px;
+  color: #565656 !important;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid transparent
+}
+footer p {
+  font-size: 15px
+}
+
+
+/* footer */
 
 .bx-chevron-right{
   color: #0090f8;
@@ -2000,3 +2054,7 @@ color: #0090f8;
     font-size: 2rem;
   }
 } */
+
+.container7{
+  padding: 0px 30px;
+}
