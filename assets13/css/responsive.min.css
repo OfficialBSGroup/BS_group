@@ -24,6 +24,16 @@
     }
 }
 
+@media (max-width:600px) {
+    .mt-5{
+       
+        padding: 40px 0;
+        
+    }
+}
+
+
+
 @media(min-width:1525px) and (max-width:1600px) {
     .ser_padd {
         margin-top: 7rem !important;
