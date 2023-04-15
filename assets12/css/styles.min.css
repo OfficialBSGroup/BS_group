@@ -72,6 +72,13 @@ path {
  .container{
     display: flex;
  }
+
+ @media (max-width:1300px){
+    .container{
+        flex-direction: column;
+    }
+ }
+
  .image1 img{
     height: 300px;
     width: 500px;
@@ -3378,9 +3385,26 @@ nav.sticky {
     color: #6d6d6d;
     font-size: 1.1rem
 }
+@media (max-width:750px) {
+    .container10{
+        flex-direction: column;
+    }
+    .image1 img{
+        width: 100%;
+        padding: 30px 50px;
+    }
+}
 
 .vision_1 {
-    padding-right: 10px
+    /* padding-right: 10px;
+     */
+   margin-left: 100px;
+}
+.container10{
+    display: flex;
+}
+.col-md-6{
+    max-width: 100%;
 }
 
 .mission ul li {
@@ -5730,11 +5754,7 @@ h1.title {
     }
 
     .image1 img{
-        position: relative;
-        top: 50px;
-        left: 50px;
-        height: 400px;
-        width: 600px;
+        
     }
 
     

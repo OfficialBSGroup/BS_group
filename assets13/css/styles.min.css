@@ -147,7 +147,7 @@ a {
 /* social feed carousel */
 
 .section-content1 img.content_img {
-    width: 650px;
+    width: 350px;
     margin: 0 auto 30px;
     position: relative
 }
@@ -5445,7 +5445,14 @@ h1.title {
       display: none;
     }
   }
-  
+  /* .navbar a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+
   .navbar-mobile {
     position: fixed;
     overflow: hidden;
@@ -5453,7 +5460,7 @@ h1.title {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(1, 3, 91, 0.9);
+    /* background: rgba(1, 3, 91, 0.9); */
     transition: 0.3s;
     z-index: 999;
   }

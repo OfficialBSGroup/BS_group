@@ -793,6 +793,11 @@ section {
   background:#0090f8;
   margin: 4px 10px;
 }
+@media (max-width:450) {
+  .section-title h2::after {
+    display: none;
+  }
+}
 
 .section-title p {
   margin: 0;
@@ -937,7 +942,7 @@ section {
 }
 
 .pic img {
-	width: 19.5vw;
+	width: 24.5vw;
 }
 
 .member-info {
@@ -953,6 +958,20 @@ section {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+}
+
+@media (max-width:750px) {
+  .parent_team_flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pic img {
+    width: 200px;
+    height: 200px;
+    
+    margin-bottom: 30px;
+  }
 }
 
 #child_flexx {
@@ -1071,6 +1090,10 @@ section {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+.container8{
+  padding: 0px 40px;
 }
 
 /*--------------------------------------------------------------

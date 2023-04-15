@@ -1062,7 +1062,7 @@
     }
     .section-content1 img.content_img {
         width: 265px !important;
-        height: 210px !important;
+        height: 150px !important;
         margin: 0 auto 30px
     }
     .content_page {
@@ -1448,8 +1448,8 @@
         font-size: 15px !important
     }
     .section-content1 img.content_img {
-        width: 470px !important;
-        height: 270px !important
+        width: 385px !important;
+        height: 215px !important;
     }
     img.img-fluid.content_img.icons_img {
         width: 380px !important;
@@ -1462,6 +1462,14 @@
     .life_what_box {
         margin-bottom: 15px
     }
+}
+
+@media screen and (min-width:750px) and (max-width:990px) {
+    .section-content1 img.content_img {
+        width: 285px !important;
+        height: 155px !important;
+    }
+
 }
 
 @media screen and (min-width:1240px) and (max-width:1269px) {
@@ -1507,8 +1515,8 @@
         font-size: 15px !important
     }
     .section-content1 img.content_img {
-        width: 270px !important;
-        height: 170px !important
+        width: 391px !important;
+        height: 214px !important;
     }
     .cont_div p {
         font-size: 20px;
@@ -1570,8 +1578,8 @@
         font-size: 15px !important
     }
     .section-content1 img.content_img {
-        width: 350px !important;
-        height: 120px !important
+        width: 359px !important;
+        height: 212px !important;
     }
     .cont_div p {
         font-size: 1.2rem;

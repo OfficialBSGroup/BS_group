@@ -232,7 +232,7 @@
         margin-bottom: -5px;
     }
     .cont_div p {
-        font-size: 10px;
+        font-size: 14px;
         margin: 10px 0;
     }
     .ser_padd1 {
@@ -977,8 +977,10 @@
         font-size: 14px !important
     }
     .section-content1 img.content_img {
-        width: 265px !important;
-        margin: 0 auto 30px
+        width: 200px !important;
+        margin: 0 auto 30px;
+        position: sticky;
+        
     }
     img.img-fluid.content_img.icons_img {
         position: absolute;
@@ -1063,7 +1065,8 @@
     .section-content1 img.content_img {
         width: 265px !important;
         height: 210px !important;
-        margin: 0 auto 30px
+        margin: 0 auto 30px;
+        position: sticky;
     }
     .content_page {
         font-size: 16px !important
@@ -1092,7 +1095,8 @@
     }
     .section-content1 img.content_img {
         width: 265px !important;
-        margin: 0 auto !important
+        margin: 0 auto !important;
+        position: sticky;
     }
     img.img-fluid.content_img.icons_img {
         width: 200px !important;

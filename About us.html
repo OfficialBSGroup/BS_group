@@ -32,6 +32,21 @@
 
     <!-- new summernote script -->
 
+
+    <!-- navbar -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <!-- navbar -->
+
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <!-- end -->
 
     <meta name="google-site-verification" content="aZfD7D8lgmO9oNahGi1nps1H-cOzGX75RomTrCImRdM" />
@@ -435,47 +450,71 @@
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           </div>
     
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li class="dropdown"><a class="nav-link scrollto" href=""><span>About us</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="About us.html"> About us</a></li>
-            <li><a href="vision-mission.html">Vision & Mission</a></li>
-            <li><a href="Founder.html">Founder & Management</a></li>
-              </ul></li>
-              <li><a class="nav-link scrollto" href="#about">Inside BS Group</a></li>
-              <!-- <li><a class="nav-link scrollto" href="#gallery">Careers</a></li> -->
-              <!-- <li><a class="nav-link scrollto" href="#team">Blogs</a></li> -->
-              <li class="dropdown"><a href="#"><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
+          <nav id="navbar" class="navbar navbar-mobile">
+            <!-- <div id="menus"> -->
                 <ul>
-    
-                  <li><a href="branding.html">Branding</a></li>
-                  <li><a href="ppc-marketing-services.html">Performance Marketing</a></li>
-                  <li><a href="digital-social-media-marketing.html">Social Media Marketing
-                    </a>
-                  </li>
-                  <li><a href="PRActivities.html">Public Relations</a></li>
-                  <li><a href="best-content-marketing-company-india.html">Content
-                      Marketing</a></li>
-                  <li><a href="digital-marketing.html">Digital marketing</a></li>
-                  <li><a href="best-seo-company-pune.html">Search Engine Optimization</a>
-                  </li>
-                  <li><a href="website-designing-development-company-pune.html">Web
-                      Development</a></li>
-                  <li><a href="digital-analytics-services.html">Digital Media Analytics</a></li>
-                  <li><a href="consulting.html">Consulting</a></li>
-    
-    
-                </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li class="dropdown"><a class="nav-link scrollto" href=""><span>About us</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="About us.html"> About us</a></li>
+                  <li><a href="vision-mission.html">Vision & Mission</a></li>
+                  <li><a href="Founder.html">Founder & Management</a></li>
+                    </ul></li>
+                    <li><a class="nav-link scrollto" href="index.html">Inside BS Group</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#gallery">Careers</a></li> -->
+                    <!-- <li><a class="nav-link scrollto" href="#team">Blogs</a></li> -->
+                    <li class="dropdown"><a href="#"><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
+                      <ul>
+          
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="ppc-marketing-services.html">Performance Marketing</a></li>
+                        <li><a href="digital-social-media-marketing.html">Social Media Marketing
+                          </a>
+                        </li>
+                        <li><a href="PRActivities.html">Public Relations</a></li>
+                        <li><a href="best-content-marketing-company-india.html">Content
+                            Marketing</a></li>
+                        <li><a href="digital-marketing.html">Digital marketing</a></li>
+                        <li><a href="best-seo-company-pune.html">Search Engine Optimization</a>
+                        </li>
+                        <li><a href="website-designing-development-company-pune.html">Web
+                            Development</a></li>
+                        <li><a href="digital-analytics-services.html">Digital Media Analytics</a></li>
+                        <li><a href="consulting.html">Consulting</a></li>
+          
+          
+                      </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="index.html">Contact us</a></li>
+                  </ul>
+            <!-- </div> -->
+           
+           
           </nav><!-- .navbar -->
-    
+          <a href="javascript:void(0);" class="icon"
+            onclick="geeksforgeeks()">
+            <i onclick="myFunction(this)" 
+                     class="fa fa-plus-circle .mobile-nav-toggle">
+            </i>
+         </a>
         </div>
       </header><!-- End Header -->
+      <script>
+        // Function to toggle the bar
+    function geeksforgeeks() {
+        var x = document.getElementsByClassName("navbar-mobile");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    
+    // Function to toggle the plus menu into minus
+    function myFunction(x) {
+        x.classList.toggle("fa-minus-circle");
+    }
+      </script>
     
 
 
@@ -1985,6 +2024,7 @@
                 <a href="https://www.instagram.com/officialbsgroup/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
                 <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
                 <a href="https://www.linkedin.com/company/officialbsgroup/mycompany/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.youtube.com/@officialbsgroup" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
                   </div>
                 </div>
               </div>
