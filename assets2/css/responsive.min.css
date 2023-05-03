@@ -224,14 +224,6 @@
     }
 }
 
-@media screen and (min-width:760px) and (max-width:800px) {
-
-    .pt-lg-5{
-        position: relative;
-        top: 20px;
-    }
-}
-
 @media screen and (min-width:766px) and (max-width:1024px) {
     .section-content1 h1 {
         font-size: 2rem;
@@ -240,7 +232,7 @@
         margin-bottom: -5px;
     }
     .cont_div p {
-        font-size: 15px;
+        font-size: 5px;
         margin: 5px 0;
     }
     .ser_padd1 {
@@ -1070,7 +1062,7 @@
     }
     .section-content1 img.content_img {
         width: 265px !important;
-        height: 175px !important;
+        height: 210px !important;
         margin: 0 auto 30px
     }
     .content_page {
@@ -1582,7 +1574,7 @@
         height: 320px !important
     }
     .cont_div p {
-        font-size: 1.0rem;
+        font-size: 0.5rem;
         margin: 0.5rem 0 !important
     }
     .heading_text h1 {
